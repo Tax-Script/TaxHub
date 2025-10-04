@@ -57,8 +57,7 @@ local Translations = {
     ["Fly V3"] = "飞行V3",
     ["VFX Logger"] = "特效日志",
     ["Auto Block V10"] = "自动格挡V10",
-    ["The Strongest Battle Grounds"] = "最强战场  原作者TheVexon   汉化制作Tax
-（均为机翻 如有错误请谅解）",
+    ["The Strongest Battle Grounds"] = "最强战场  原作者TheVexon   汉化制作Tax（均为机翻 如有错误请谅解）",
     ["Search"] = "搜索",
     ["Player"] = "玩家",
     ["ServerHop"] = "切换服务器",
