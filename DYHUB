@@ -68,7 +68,7 @@ local Translations = {
     ["Auto Gacha Character"] = "自动角色抽奖",
     ["Select Gacha Skin Spins"] = "选择皮肤抽奖次数",
     ["Auto Gacha Skin"] = "自动皮肤抽奖",
-    ["DYHUB"] = "DYHUB    Tax汉化",
+    ["DYHUB"] = "DYHUB   Tax汉化",
     ["ST : Blockade Battlefront | Free Version"] = "ST : Blockade Battlefront | 免费版本",
     ["Feature Visual"] = "视觉功能",
     ["Full Bright"] = "全亮",
@@ -92,7 +92,20 @@ local Translations = {
     ["ESP Distance"] = "ESP距离",
     ["Feature Skill"] = "技能功能",
     ["Set Auto Skill"] = "设置自动技能",
-    ["Auto Skill"] = "自动技能"
+    ["Auto Skill"] = "自动技能",
+    ["Codes"] = "代码",
+    ["Shop"] = "商店",
+    ["Gamepass"] = "游戏通行证",
+    ["Misc"] = "杂项",
+    ["Information"] = "信息",
+    ["Main"] = "主菜单",
+    ["Player"] = "玩家",
+    ["Skill"] = "技能",
+    ["Esp"] = "ESP",
+    ["Collect"] = "收集",
+    ["Hitbox"] = "命中框",
+    ["Quest"] = "任务",
+    ["Mastery"] = "精通"
 }
 
 local function translateText(text)
@@ -127,6 +140,8 @@ local function setupTranslationEngine()
     end)
     
     if not success then
+        warn("元表劫持失败:", err)
+       
         local translated = {}
         local function scanAndTranslate()
             for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
@@ -194,8 +209,13 @@ local function setupTranslationEngine()
 end
 
 task.wait(2)
+
 setupTranslationEngine()
 
 local success, err = pcall(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/dyumra/Loader/refs/heads/main/LoaderV2'))()
 end)
+
+if not success then
+    warn("加载失败:", err)
+end
