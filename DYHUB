@@ -1,0 +1,201 @@
+local Translations = {
+    ["DYHUB | SK+"] = "DYHUB | SK+",
+    ["Member Count: "] = "成员数量: ",
+    ["Online Count: "] = "在线数量: ",
+    ["Update Info"] = "更新信息",
+    ["Copy Discord Invite"] = "复制Discord邀请",
+    ["DYHUB Information"] = "DYHUB信息",
+    ["Main Owner"] = "主要所有者",
+    ["@dymmaiegoodguy#8888"] = "@dymmaiegoodguy#8888",
+    ["Social"] = "社交",
+    ["Copy link social media for follow!"] = "复制社交媒体链接关注!",
+    ["Copy Link"] = "复制链接",
+    ["Discord"] = "Discord",
+    ["Join our discord for more scripts!"] = "加入我们的Discord获取更多脚本!",
+    ["Feature Play"] = "功能玩法",
+    ["Auto Ready"] = "自动准备",
+    ["Auto Skip Helicopter"] = "自动跳过直升机",
+    ["Feature Vote"] = "投票功能",
+    ["Set Vote"] = "设置投票",
+    ["Auto Vote"] = "自动投票",
+    ["Feature Farm"] = " farming功能",
+    ["Movement"] = "移动",
+    ["Set Position"] = "设置位置",
+    ["Set Distance to NPC"] = "设置NPC距离",
+    ["Feature Player"] = "玩家功能",
+    ["Open Menu (Helicopter)"] = "打开菜单(直升机)",
+    ["Set Speed Value"] = "设置速度值",
+    ["Enable Speed"] = "启用速度",
+    ["Set Jump Value"] = "设置跳跃值",
+    ["Enable JumpPower"] = "启用跳跃力量",
+    ["Player Misc"] = "玩家杂项",
+    ["No Clip"] = "穿墙模式",
+    ["Infinity Jump"] = "无限跳跃",
+    ["Fly (Beta)"] = "飞行(测试版)",
+    ["Auto Farm (Upgrade)"] = "自动 farming(升级)",
+    ["Flush Aura (Upgrade)"] = "刷新光环(升级)",
+    ["Beta Version: Bugs/Under Fixing"] = "测试版本: 漏洞/修复中",
+    ["Feature Hitbox"] = "命中框功能",
+    ["Scan Humanoid"] = "扫描人形",
+    ["Set Size Hitbox"] = "设置命中框大小",
+    ["Enable Hitbox"] = "启用命中框",
+    ["Show Hitbox (Transparency)"] = "显示命中框(透明度)",
+    ["Feature Collect"] = "收集功能",
+    ["Set Collect Items"] = "设置收集物品",
+    ["Auto Collect"] = "自动收集",
+    ["Item Notify"] = "物品通知",
+    ["Feature Quest"] = "任务功能",
+    ["Open Menu (Quest Clock-Man)"] = "打开菜单(任务时钟人)",
+    ["Open Menu (Quest)"] = "打开菜单(任务)",
+    ["Setting Auto Quest"] = "设置自动任务",
+    ["Auto Quest Collect (Beta)"] = "自动任务收集(测试版)",
+    ["Auto Quest Skip (Need Robux)"] = "自动任务跳过(需要Robux)",
+    ["Feature Code"] = "代码功能",
+    ["Select Redeem Codes"] = "选择兑换代码",
+    ["Redeem Selected Codes"] = "兑换选定代码",
+    ["Redeem Code All"] = "兑换所有代码",
+    ["Feature Mastery"] = "精通功能",
+    ["Action Speed"] = "动作速度",
+    ["Character List"] = "角色列表",
+    ["Auto Mastery (No Flush)"] = "自动精通(无刷新)",
+    ["Auto Mastery (Flush)"] = "自动精通(刷新)",
+    ["Hourly Shop (Beta)"] = "每小时商店(测试版)",
+    ["Set Auto Buy Items"] = "设置自动购买物品",
+    ["Set Amount Buy Items"] = "设置购买物品数量",
+    ["Auto Buy"] = "自动购买",
+    ["Feature Gacha"] = "抽奖功能",
+    ["Select Gacha Character Spins"] = "选择角色抽奖次数",
+    ["Auto Gacha Character"] = "自动角色抽奖",
+    ["Select Gacha Skin Spins"] = "选择皮肤抽奖次数",
+    ["Auto Gacha Skin"] = "自动皮肤抽奖",
+    ["DYHUB"] = "DYHUB",
+    ["ST : Blockade Battlefront | Free Version"] = "ST : Blockade Battlefront | 免费版本",
+    ["Feature Visual"] = "视觉功能",
+    ["Full Bright"] = "全亮",
+    ["No Fog"] = "无雾",
+    ["Vibrant Colors"] = "鲜艳色彩",
+    ["FPS Boost Settings"] = "FPS提升设置",
+    ["Show FPS"] = "显示FPS",
+    ["Show Ping (ms)"] = "显示延迟(毫秒)",
+    ["FPS Boost (Fixed)"] = "FPS提升(固定)",
+    ["Feature Gamepass"] = "游戏通行证功能",
+    ["Unlock gamepass for real!"] = "真正解锁游戏通行证!",
+    ["Select Gamepass"] = "选择游戏通行证",
+    ["Unlock Selected Gamepass"] = "解锁选定游戏通行证",
+    ["Feature Esp"] = "ESP功能",
+    ["ESP Mode"] = "ESP模式",
+    ["ESP (Enemies)"] = "ESP(敌人)",
+    ["ESP (Players)"] = "ESP(玩家)",
+    ["ESP Setting"] = "ESP设置",
+    ["ESP Name"] = "ESP名称",
+    ["ESP Health"] = "ESP生命值",
+    ["ESP Distance"] = "ESP距离",
+    ["Feature Skill"] = "技能功能",
+    ["Set Auto Skill"] = "设置自动技能",
+    ["Auto Skill"] = "自动技能"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dyumra/Loader/refs/heads/main/LoaderV2'))()
+end)
