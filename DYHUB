@@ -1,185 +1,250 @@
-local function directChineseTranslation()
-    local function translateObject(obj)
-        if not obj:IsA("TextLabel") and not obj:IsA("TextButton") and not obj:IsA("TextBox") then
-            return
-        end
-        
-        local text = obj.Text
-        if not text or text == "" then return end
-        
-        if text == "DYHUB | SK+" then obj.Text = "DYHUB | SK+"
-        elseif text:find("Member Count: ") then obj.Text = text:gsub("Member Count: ", "成员数量: ")
-        elseif text:find("Online Count: ") then obj.Text = text:gsub("Online Count: ", "在线数量: ")
-        elseif text == "Update Info" then obj.Text = "更新信息"
-        elseif text == "Copy Discord Invite" then obj.Text = "复制Discord邀请"
-        elseif text == "DYHUB Information" then obj.Text = "DYHUB信息"
-        elseif text == "Main Owner" then obj.Text = "主要所有者"
-        elseif text == "@dymmaiegoodguy#8888" then obj.Text = "@dymmaiegoodguy#8888"
-        elseif text == "Social" then obj.Text = "社交"
-        elseif text == "Copy link social media for follow!" then obj.Text = "复制社交媒体链接关注!"
-        elseif text == "Copy Link" then obj.Text = "复制链接"
-        elseif text == "Discord" then obj.Text = "Discord"
-        elseif text == "Join our discord for more scripts!" then obj.Text = "加入我们的Discord获取更多脚本!"
-        elseif text == "Feature Play" then obj.Text = "功能玩法"
-        elseif text == "Auto Ready" then obj.Text = "自动准备"
-        elseif text == "Auto Skip Helicopter" then obj.Text = "自动跳过直升机"
-        elseif text == "Feature Vote" then obj.Text = "投票功能"
-        elseif text == "Set Vote" then obj.Text = "设置投票"
-        elseif text == "Auto Vote" then obj.Text = "自动投票"
-        elseif text == "Feature Farm" then obj.Text = "农场功能"
-        elseif text == "Movement" then obj.Text = "移动"
-        elseif text == "Set Position" then obj.Text = "设置位置"
-        elseif text == "Set Distance to NPC" then obj.Text = "设置NPC距离"
-        elseif text == "Feature Player" then obj.Text = "玩家功能"
-        elseif text == "Open Menu (Helicopter)" then obj.Text = "打开菜单(直升机)"
-        elseif text == "Set Speed Value" then obj.Text = "设置速度值"
-        elseif text == "Enable Speed" then obj.Text = "启用速度"
-        elseif text == "Set Jump Value" then obj.Text = "设置跳跃值"
-        elseif text == "Enable JumpPower" then obj.Text = "启用跳跃力量"
-        elseif text == "Player Misc" then obj.Text = "玩家杂项"
-        elseif text == "No Clip" then obj.Text = "穿墙模式"
-        elseif text == "Infinity Jump" then obj.Text = "无限跳跃"
-        elseif text == "Fly (Beta)" then obj.Text = "飞行(测试版)"
-        elseif text == "Auto Farm (Upgrade)" then obj.Text = "自动农场(升级)"
-        elseif text == "Flush Aura (Upgrade)" then obj.Text = "刷新光环(升级)"
-        elseif text == "Beta Version: Bugs/Under Fixing" then obj.Text = "测试版本:漏洞/修复中"
-        elseif text == "Feature Hitbox" then obj.Text = "命中框功能"
-        elseif text == "Scan Humanoid" then obj.Text = "扫描人形"
-        elseif text == "Set Size Hitbox" then obj.Text = "设置命中框大小"
-        elseif text == "Enable Hitbox" then obj.Text = "启用命中框"
-        elseif text == "Show Hitbox (Transparency)" then obj.Text = "显示命中框(透明度)"
-        elseif text == "Feature Collect" then obj.Text = "收集功能"
-        elseif text == "Set Collect Items" then obj.Text = "设置收集物品"
-        elseif text == "Auto Collect" then obj.Text = "自动收集"
-        elseif text == "Item Notify" then obj.Text = "物品通知"
-        elseif text == "Feature Quest" then obj.Text = "任务功能"
-        elseif text == "Open Menu (Quest Clock-Man)" then obj.Text = "打开菜单(任务时钟人)"
-        elseif text == "Open Menu (Quest)" then obj.Text = "打开菜单(任务)"
-        elseif text == "Setting Auto Quest" then obj.Text = "设置自动任务"
-        elseif text == "Auto Quest Collect (Beta)" then obj.Text = "自动任务收集(测试版)"
-        elseif text == "Auto Quest Skip (Need Robux)" then obj.Text = "自动任务跳过(需要Robux)"
-        elseif text == "Feature Code" then obj.Text = "代码功能"
-        elseif text == "Select Redeem Codes" then obj.Text = "选择兑换代码"
-        elseif text == "Redeem Selected Codes" then obj.Text = "兑换选定代码"
-        elseif text == "Redeem Code All" then obj.Text = "兑换所有代码"
-        elseif text == "Feature Mastery" then obj.Text = "精通功能"
-        elseif text == "Action Speed" then obj.Text = "动作速度"
-        elseif text == "Character List" then obj.Text = "角色列表"
-        elseif text == "Auto Mastery (No Flush)" then obj.Text = "自动精通(无刷新)"
-        elseif text == "Auto Mastery (Flush)" then obj.Text = "自动精通(刷新)"
-        elseif text == "Hourly Shop (Beta)" then obj.Text = "每小时商店(测试版)"
-        elseif text == "Set Auto Buy Items" then obj.Text = "设置自动购买物品"
-        elseif text == "Set Amount Buy Items" then obj.Text = "设置购买物品数量"
-        elseif text == "Auto Buy" then obj.Text = "自动购买"
-        elseif text == "Feature Gacha" then obj.Text = "抽奖功能"
-        elseif text == "Select Gacha Character Spins" then obj.Text = "选择角色抽奖次数"
-        elseif text == "Auto Gacha Character" then obj.Text = "自动角色抽奖"
-        elseif text == "Select Gacha Skin Spins" then obj.Text = "选择皮肤抽奖次数"
-        elseif text == "Auto Gacha Skin" then obj.Text = "自动皮肤抽奖"
-        elseif text == "DYHUB" then obj.Text = "DYHUB"
-        elseif text == "ST : Blockade Battlefront | Free Version" then obj.Text = "ST : Blockade Battlefront | 免费版本"
-        elseif text == "Feature Visual" then obj.Text = "视觉功能"
-        elseif text == "Full Bright" then obj.Text = "全亮"
-        elseif text == "No Fog" then obj.Text = "无雾"
-        elseif text == "Vibrant Colors" then obj.Text = "鲜艳色彩"
-        elseif text == "FPS Boost Settings" then obj.Text = "FPS提升设置"
-        elseif text == "Show FPS" then obj.Text = "显示FPS"
-        elseif text == "Show Ping (ms)" then obj.Text = "显示延迟(毫秒)"
-        elseif text == "FPS Boost (Fixed)" then obj.Text = "FPS提升(固定)"
-        elseif text == "Feature Gamepass" then obj.Text = "游戏通行证功能"
-        elseif text == "Unlock gamepass for real!" then obj.Text = "真正解锁游戏通行证!"
-        elseif text == "Select Gamepass" then obj.Text = "选择游戏通行证"
-        elseif text == "Unlock Selected Gamepass" then obj.Text = "解锁选定游戏通行证"
-        elseif text == "Feature Esp" then obj.Text = "ESP功能"
-        elseif text == "ESP Mode" then obj.Text = "ESP模式"
-        elseif text == "ESP (Enemies)" then obj.Text = "ESP(敌人)"
-        elseif text == "ESP (Players)" then obj.Text = "ESP(玩家)"
-        elseif text == "ESP Setting" then obj.Text = "ESP设置"
-        elseif text == "ESP Name" then obj.Text = "ESP名称"
-        elseif text == "ESP Health" then obj.Text = "ESP生命值"
-        elseif text == "ESP Distance" then obj.Text = "ESP距离"
-        elseif text == "Feature Skill" then obj.Text = "技能功能"
-        elseif text == "Set Auto Skill" then obj.Text = "设置自动技能"
-        elseif text == "Auto Skill" then obj.Text = "自动技能"
-        elseif text == "Codes" then obj.Text = "代码"
-        elseif text == "Shop" then obj.Text = "商店"
-        elseif text == "Gamepass" then obj.Text = "游戏通行证"
-        elseif text == "Misc" then obj.Text = "杂项"
-        elseif text == "Information" then obj.Text = "信息"
-        elseif text == "Main" then obj.Text = "主菜单"
-        elseif text == "Player" then obj.Text = "玩家"
-        elseif text == "Skill" then obj.Text = "技能"
-        elseif text == "Esp" then obj.Text = "ESP"
-        elseif text == "Collect" then obj.Text = "收集"
-        elseif text == "Hitbox" then obj.Text = "命中框"
-        elseif text == "Quest" then obj.Text = "任务"
-        elseif text == "Mastery" then obj.Text = "精通"
-        elseif text == "Search" then obj.Text = "搜索"
-        elseif text == "Auto" then obj.Text = "自动"
-        elseif text == "Bring" then obj.Text = "携带"
-        elseif text == "Combat" then obj.Text = "战斗"
-        elseif text == "Teleport" then obj.Text = "传送"
-        elseif text == "Farm" then obj.Text = "农场"
-        elseif text == "Anti" then obj.Text = "反制"
-        elseif text == "Settings" then obj.Text = "设置"
-        elseif text == "Auto Feed" then obj.Text = "自动喂食"
-        elseif text == "Select Food" then obj.Text = "选择食物"
-        elseif text == "Choose the food" then obj.Text = "选择食物"
-        elseif text == "Feed Amount" then obj.Text = "喂食数量"
-        elseif text == "Eat when hunger reaches this %" then obj.Text = "饥饿度达到此百分比时进食"
-        elseif text == "Instant Interact" then obj.Text = "即时交互"
-        elseif text:find("在%d+秒后返回") then obj.Text = text
-        elseif text:find("再次与同一队比赛") then obj.Text = text
-        elseif text == "让每个人都复活" then obj.Text = text
-        elseif text == "Auto Upgrade Campfire" then obj.Text = "自动升级营火"
-        elseif text == "Choose the items" then obj.Text = "选择物品"
-        elseif text == "Auto Scrap Items" then obj.Text = "自动拆解物品"
-        elseif text == "Auto Cook Food" then obj.Text = "自动烹饪食物"
-        elseif text == "Junk" then obj.Text = "垃圾物品"
-        elseif text == "Select Junk Items" then obj.Text = "选择垃圾物品"
-        elseif text == "Choose items to bring" then obj.Text = "选择要携带的物品"
-        elseif text == "Bring Junk Items" then obj.Text = "携带垃圾物品"
-        elseif text == "Before you Bring Unlocked 1 zone first!" then obj.Text = "携带前先解锁1个区域!"
-        elseif text == "Fuel" then obj.Text = "燃料"
-        elseif text == "Select Fuel Items" then obj.Text = "选择燃料物品"
-        elseif text == "Bring Fuel Items" then obj.Text = "携带燃料物品"
-        elseif text == "Before you Bring Unlocked 1 Zone First!" then obj.Text = "携带前先解锁1个区域!"
-        elseif text == "Food" then obj.Text = "食物"
-        elseif text == "Select Food Items" then obj.Text = "选择食物物品"
+local Translations = {
+    ["DYHUB | SK+"] = "DYHUB | SK+",
+    ["Member Count: "] = "成员数量: ",
+    ["Online Count: "] = "在线数量: ",
+    ["Update Info"] = "更新信息",
+    ["Copy Discord Invite"] = "复制Discord邀请",
+    ["DYHUB Information"] = "DYHUB信息",
+    ["Main Owner"] = "主要所有者",
+    ["@dymmaiegoodguy#8888"] = "@dymmaiegoodguy#8888",
+    ["Social"] = "社交",
+    ["Copy link social media for follow!"] = "复制社交媒体链接关注!",
+    ["Copy Link"] = "复制链接",
+    ["Discord"] = "Discord",
+    ["Join our discord for more scripts!"] = "加入我们的Discord获取更多脚本!",
+    ["Feature Play"] = "功能玩法",
+    ["Auto Ready"] = "自动准备",
+    ["Auto Skip Helicopter"] = "自动跳过直升机",
+    ["Feature Vote"] = "投票功能",
+    ["Set Vote"] = "设置投票",
+    ["Auto Vote"] = "自动投票",
+    ["Feature Farm"] = "农场功能",
+    ["Movement"] = "移动",
+    ["Set Position"] = "设置位置",
+    ["Set Distance to NPC"] = "设置NPC距离",
+    ["Feature Player"] = "玩家功能",
+    ["Open Menu (Helicopter)"] = "打开菜单(直升机)",
+    ["Set Speed Value"] = "设置速度值",
+    ["Enable Speed"] = "启用速度",
+    ["Set Jump Value"] = "设置跳跃值",
+    ["Enable JumpPower"] = "启用跳跃力量",
+    ["Player Misc"] = "玩家杂项",
+    ["No Clip"] = "穿墙模式",
+    ["Infinity Jump"] = "无限跳跃",
+    ["Fly (Beta)"] = "飞行(测试版)",
+    ["Auto Farm (Upgrade)"] = "自动农场(升级)",
+    ["Flush Aura (Upgrade)"] = "刷新光环(升级)",
+    ["Beta Version: Bugs/Under Fixing"] = "测试版本:漏洞/修复中",
+    ["Feature Hitbox"] = "命中框功能",
+    ["Scan Humanoid"] = "扫描人形",
+    ["Set Size Hitbox"] = "设置命中框大小",
+    ["Enable Hitbox"] = "启用命中框",
+    ["Show Hitbox (Transparency)"] = "显示命中框(透明度)",
+    ["Feature Collect"] = "收集功能",
+    ["Set Collect Items"] = "设置收集物品",
+    ["Auto Collect"] = "自动收集",
+    ["Item Notify"] = "物品通知",
+    ["Feature Quest"] = "任务功能",
+    ["Open Menu (Quest Clock-Man)"] = "打开菜单(任务时钟人)",
+    ["Open Menu (Quest)"] = "打开菜单(任务)",
+    ["Setting Auto Quest"] = "设置自动任务",
+    ["Auto Quest Collect (Beta)"] = "自动任务收集(测试版)",
+    ["Auto Quest Skip (Need Robux)"] = "自动任务跳过(需要Robux)",
+    ["Feature Code"] = "代码功能",
+    ["Select Redeem Codes"] = "选择兑换代码",
+    ["Redeem Selected Codes"] = "兑换选定代码",
+    ["Redeem Code All"] = "兑换所有代码",
+    ["Feature Mastery"] = "精通功能",
+    ["Action Speed"] = "动作速度",
+    ["Character List"] = "角色列表",
+    ["Auto Mastery (No Flush)"] = "自动精通(无刷新)",
+    ["Auto Mastery (Flush)"] = "自动精通(刷新)",
+    ["Hourly Shop (Beta)"] = "每小时商店(测试版)",
+    ["Set Auto Buy Items"] = "设置自动购买物品",
+    ["Set Amount Buy Items"] = "设置购买物品数量",
+    ["Auto Buy"] = "自动购买",
+    ["Feature Gacha"] = "抽奖功能",
+    ["Select Gacha Character Spins"] = "选择角色抽奖次数",
+    ["Auto Gacha Character"] = "自动角色抽奖",
+    ["Select Gacha Skin Spins"] = "选择皮肤抽奖次数",
+    ["Auto Gacha Skin"] = "自动皮肤抽奖",
+    ["DYHUB"] = "DYHUB",
+    ["ST : Blockade Battlefront | Free Version"] = "ST : Blockade Battlefront | 免费版本",
+    ["Feature Visual"] = "视觉功能",
+    ["Full Bright"] = "全亮",
+    ["No Fog"] = "无雾",
+    ["Vibrant Colors"] = "鲜艳色彩",
+    ["FPS Boost Settings"] = "FPS提升设置",
+    ["Show FPS"] = "显示FPS",
+    ["Show Ping (ms)"] = "显示延迟(毫秒)",
+    ["FPS Boost (Fixed)"] = "FPS提升(固定)",
+    ["Feature Gamepass"] = "游戏通行证功能",
+    ["Unlock gamepass for real!"] = "真正解锁游戏通行证!",
+    ["Select Gamepass"] = "选择游戏通行证",
+    ["Unlock Selected Gamepass"] = "解锁选定游戏通行证",
+    ["Feature Esp"] = "ESP功能",
+    ["ESP Mode"] = "ESP模式",
+    ["ESP (Enemies)"] = "ESP(敌人)",
+    ["ESP (Players)"] = "ESP(玩家)",
+    ["ESP Setting"] = "ESP设置",
+    ["ESP Name"] = "ESP名称",
+    ["ESP Health"] = "ESP生命值",
+    ["ESP Distance"] = "ESP距离",
+    ["Feature Skill"] = "技能功能",
+    ["Set Auto Skill"] = "设置自动技能",
+    ["Auto Skill"] = "自动技能",
+    ["Codes"] = "代码",
+    ["Shop"] = "商店",
+    ["Gamepass"] = "游戏通行证",
+    ["Misc"] = "杂项",
+    ["Information"] = "信息",
+    ["Main"] = "主菜单",
+    ["Player"] = "玩家",
+    ["Skill"] = "技能",
+    ["Esp"] = "ESP",
+    ["Collect"] = "收集",
+    ["Hitbox"] = "命中框",
+    ["Quest"] = "任务",
+    ["Mastery"] = "精通",
+    ["Search"] = "搜索",
+    ["Auto"] = "自动",
+    ["Bring"] = "携带",
+    ["Combat"] = "战斗",
+    ["Teleport"] = "传送",
+    ["Farm"] = "农场",
+    ["Anti"] = "反制",
+    ["Settings"] = "设置",
+    ["Auto Feed"] = "自动喂食",
+    ["Select Food"] = "选择食物",
+    ["Choose the food"] = "选择食物",
+    ["Feed Amount"] = "喂食数量",
+    ["Eat when hunger reaches this %"] = "饥饿度达到此百分比时进食",
+    ["Instant Interact"] = "即时交互",
+    ["Auto Upgrade Campfire"] = "自动升级营火",
+    ["Choose the items"] = "选择物品",
+    ["Auto Scrap Items"] = "自动拆解物品",
+    ["Auto Cook Food"] = "自动烹饪食物",
+    ["Junk"] = "垃圾物品",
+    ["Select Junk Items"] = "选择垃圾物品",
+    ["Choose items to bring"] = "选择要携带的物品",
+    ["Bring Junk Items"] = "携带垃圾物品",
+    ["Before you Bring Unlocked 1 zone first!"] = "携带前先解锁1个区域!",
+    ["Fuel"] = "燃料",
+    ["Select Fuel Items"] = "选择燃料物品",
+    ["Bring Fuel Items"] = "携带燃料物品",
+    ["Before you Bring Unlocked 1 Zone First!"] = "携带前先解锁1个区域!",
+    ["Food"] = "食物",
+    ["Select Food Items"] = "选择食物物品"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
         end
     end
+    
+    return text
+end
 
-    local function scanAndTranslate()
-        for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
-            pcall(translateObject, gui)
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
         end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
         local player = game:GetService("Players").LocalPlayer
         if player and player:FindFirstChild("PlayerGui") then
-            for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
-                pcall(translateObject, gui)
-            end
+            pcall(setupDescendantListener, player.PlayerGui)
         end
-    end
-
-    local function setupDescendantListener(parent)
-        parent.DescendantAdded:Connect(function(descendant)
-            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
-                task.wait(0.1)
-                pcall(translateObject, descendant)
-            end
-        end)
-    end
-
-    pcall(setupDescendantListener, game:GetService("CoreGui"))
-    local player = game:GetService("Players").LocalPlayer
-    if player and player:FindFirstChild("PlayerGui") then
-        pcall(setupDescendantListener, player.PlayerGui)
-    end
-
-    while true do
-        scanAndTranslate()
-        task.wait(3)
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
     end
 end
 
-directChineseTranslation()
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dyumra/Loader/refs/heads/main/LoaderV2'))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
