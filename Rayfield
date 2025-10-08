@@ -1,0 +1,272 @@
+local Translations = {
+    ["Render"] = "渲染",
+    ["AutoFarm"] = "自动农场", 
+    ["Teleport - Locations"] = "传送 - 位置",
+    ["Main Tab</>"] = "主菜单</>",
+    ["combat"] = "战斗",
+    ["Misc"] = "杂项",
+    ["GUI interface"] = "GUI界面",
+    ["Credits"] = "制作人员",
+    ["Themes"] = "主题设置",
+    ["Animation Logger"] = "动画记录器",
+    ["Toturial"] = "使用教程",
+    ["Updates »"] = "更新日志 »",
+    ["Set speed to 12 - default speed"] = "设置速度为12 - 默认速度",
+    ["Speed by Bloxy"] = "速度 by Bloxy",
+    ["Bypass beatrap placement"] = "绕过陷阱放置",
+    ["ThirdPerson"] = "第三人称",
+    ["Remove Mask on head - third person"] = "移除头部面具 - 第三人称",
+    ["CHAIN Hitbox expander beta - slightly updated may glitch chain"] = "CHAIN命中框扩展器测试版 - 轻微更新可能导致链式故障",
+    ["Inf dodge is sadly patched"] = "无限闪避已被修复",
+    ["Windows users may get kicked due to anti cheat in Chain"] = "Windows用户可能因Chain的反作弊被踢出",
+    ["Remove Adonis anticheat"] = "移除Adonis反作弊",
+    ["discord server incase u missed notification! |"] = "Discord服务器以防您错过通知！|",
+    ["discord.gg/UG7bH5QUVA"] = "discord.gg/UG7bH5QUVA",
+    ["Copy discord invite link"] = "复制Discord邀请链接",
+    ["Destroy UI"] = "销毁UI",
+    ["Chapter 1 script by Neonicf"] = "第1章脚本 by Neonicf",
+    ["Print Chainsaw is funny chain"] = "打印链锯是有趣的链",
+    ["Random color picker idk"] = "随机颜色选择器 不知道",
+    ["See Chat"] = "查看聊天",
+    ["Shiftlock thing by blow idk"] = "Shift锁定功能 by blow 不知道",
+    ["These are mostly people who will ban/report you so be careful!"] = "这些大多是会封禁/举报您的人，请小心！",
+    ["Detect Special Thanks people"] = "检测特别感谢人员",
+    ["Detect Contributers"] = "检测贡献者",
+    ["Detect Testers"] = "检测测试者",
+    ["Detect Mods/Admins (include server mods)"] = "检测版主/管理员(包括服务器版主)",
+    ["Detect Managers"] = "检测经理",
+    ["Detect Devs"] = "检测开发者",
+    ["Detect Bloodmoon"] = "检测血月",
+    ["Detect Chain's Choke"] = "检测Chain的窒息",
+    ["Detect Chain's Groundslam"] = "检测Chain的地面重击",
+    ["These only unlock blueprints btw"] = "这些只解锁蓝图而已",
+    ["Unlock all Blueprints"] = "解锁所有蓝图",
+    ["Unlock CombatKnife"] = "解锁战斗刀",
+    ["some of these might be bugged or unstable"] = "其中一些可能有bug或不稳定",
+    ["Inf Stamina"] = "无限体力",
+    ["Inf Combat Stamina"] = "无限战斗体力",
+    ["Tomahawk AttackSpeed"] = "战斧攻击速度",
+    ["Clash Strength"] = "冲突强度", 
+    ["God Mode"] = "上帝模式",
+    ["Sadly Xsaw and Ammo has been patched and removed"] = "遗憾的Xsaw和弹药已被修复和移除",
+    ["aimbot due to not working"] = "自瞄因无法工作",
+    ["WalkSpeed - glitchy kinda"] = "移动速度 - 有点故障",
+    ["Auto collect Scrap"] = "自动收集废料",
+    ["Auto collect Artifact"] = "自动收集神器",
+    ["I assume this will be patched soon - due to map update soon"] = "我猜这很快会被修复 - 因为地图即将更新",
+    ["SafeHouse"] = "安全屋",
+    ["WorkShop Outside"] = "工坊外部",
+    ["WorkShop Inside"] = "工坊内部",
+    ["Cabin inside"] = "小屋内",
+    ["Shop"] = "商店",
+    ["PowerStation"] = "发电站",
+    ["WareHouse"] = "仓库",
+    ["Ritual"] = "仪式",
+    ["Lightening - recommended to use both"] = "闪电 - 推荐同时使用",
+    ["nofog"] = "无雾",
+    ["fullbright"] = "全亮",
+    ["Shaders - PShade"] = "着色器 - PShade",
+    ["chain info esp"] = "链信息ESP",
+    ["Chain ESP - red"] = "链ESP - 红色",
+    ["Scrap ESP - not mine"] = "废料ESP - 非我的",
+    ["Watch and Power Gui"] = "手表和电力GUI",
+    ["Radio Gui"] = "无线电GUI",
+    ["Shop Gui - Only works during day"] = "商店GUI - 仅在白天工作",
+    ["These are somewhat useless Guis, deconstructor and workbench may not work cuz u have to be near it"] = "这些GUI有点无用，解构器和工作台可能不工作，因为您必须靠近它",
+    ["Deconstructor Gui"] = "解构器GUI",
+    ["Workbench Gui"] = "工作台GUI",
+    ["Artifact ESP - not mine"] = "神器ESP - 非我的",
+    ["Unlock Deagle"] = "解锁沙漠之鹰",
+    ["Unlock DoubleBarrel"] = "解锁双管枪",
+    ["Unlock MPI1"] = "解锁MPI1",
+    ["Unlock Machete"] = "解锁砍刀",
+    ["Unlock SpellBook (may be glitched)"] = "解锁法术书(可能有故障)",
+    ["Unlock Artifact Quest (might fix spellbook blueprint)"] = "解锁神器任务(可能修复法术书蓝图)",
+    ["ChainChokeWin"] = "Chain窒息胜利",
+    ["PlayerChokeLose"] = "玩家窒息失败", 
+    ["PlayerChokeStart"] = "玩家窒息开始",
+    ["PlayerChokeWin"] = "玩家窒息胜利",
+    ["Intro Animations (at the start)"] = "开场动画(开始时)",
+    ["Player"] = "玩家",
+    ["Puncher"] = "拳击手",
+    ["Dragger"] = "拖拽者", 
+    ["Passenger"] = "乘客",
+    ["Try some of these animations that feature 2 players with a friend! to do it, stand directly ontop of eachother (basically the same exact spot) then play it"] = "尝试这些需要2个玩家与朋友一起的动画！要做到这一点，直接站在彼此上方(基本上是同一个位置)然后播放",
+    ["Fun Fact: If you hold Xsaw in ur hand and use a xsaw animation it will also use xsaw in the animation, same with combat knife"] = "有趣的事实：如果你手持Xsaw并使用xsaw动画，动画中也会使用xsaw，战斗刀也一样",
+    ["Chain Run Animation"] = "Chain奔跑动画",
+    ["Become Jason Vorhees"] = "成为Jason Vorhees",
+    ["XSaw Interaction Animations"] = "XSaw交互动画",
+    ["ChainStart"] = "Chain开始",
+    ["PlayerStart"] = "玩家开始", 
+    ["ChainPlayerWin"] = "Chain玩家胜利",
+    ["ChainPlayerLose"] = "Chain玩家失败",
+    ["PlayerLose"] = "玩家失败",
+    ["LeaderBoard"] = "排行榜",
+    ["Radio Tower"] = "无线电塔",
+    ["Teleport Outside Map - safe"] = "传送到地图外 - 安全",
+    ["PlayerWin"] = "玩家胜利",
+    ["XSawSave Animation"] = "XSaw保存动画",
+    ["Chain"] = "Chain",
+    ["Combat Knife Animations"] = "战斗刀动画",
+    ["KnifeExecutionPlayer - Bloodmoon thing"] = "刀执行玩家 - Bloodmoon相关",
+    ["CounterExecutionChain - Chain tryna kill u when u do combatknife"] = "反击执行Chain - 当你使用战斗刀时Chain试图杀死你",
+    ["CounterExecutionPlayer"] = "反击执行玩家",
+    ["Bloodmoon animations"] = "Bloodmoon动画",
+    ["BloodmoonExecutionChain"] = "Bloodmoon执行Chain",
+    ["BloodmoonExecutionVictim"] = "Bloodmoon执行受害者", 
+    ["BloodmoonTransformChain"] = "Bloodmoon变形Chain",
+    ["BloodmoonTransformChainBM"] = "Bloodmoon变形ChainBM",
+    ["Choke Animations"] = "窒息动画",
+    ["ChainChokeLose"] = "Chain窒息失败",
+    ["ChainChokeStart"] = "Chain窒息开始",
+    ["ChainChokeSwing"] = "Chain窒息摆动",
+    ["Driver"] = "驾驶员",
+    ["Some Chain anims"] = "一些Chain动画",
+    ["ChainSpawn"] = "Chain生成",
+    ["DespawnChain"] = "消失Chain",
+    ["DespawnRitual"] = "消失仪式",
+    ["Charge"] = "充能",
+    ["How to get Infinite XSAW gas - you dont need too anymore unless the button i implented didnt work"] = "如何获得无限XSAW燃料 - 除非我实现的按钮不起作用，否则您不再需要",
+    ["What you want to do is execute dex, since anti cheat detects dex, execute infinite yield and type in the dex command there, then you want to go to workspace.YourUser.Items.Xsaw, then have properties open and it should say gas, you want to reach 0 gas first then once you do, make it to 100 and you have infinite gas"] = "您要做的是执行dex，由于反作弊检测dex，执行无限产量并在那里输入dex命令，然后转到workspace.YourUser.Items.Xsaw，然后打开属性，它应该显示gas，您需要先达到0 gas，然后一旦达到，将其设置为100，您就有无限gas",
+    ["v2 how to get Infinite Stamina - you dont need to anymore due to the button i made"] = "v2如何获得无限体力 - 由于我制作的按钮，您不再需要",
+    ["Your going to want to have a executor open, you want to type, while true do workspace.usernamehere.Stats.Stamina.Value = 100 wait(!) end | for line 1 put While true do | then for line 2 do {click on tab key first} workspace.Youruser.Stats.Stamina.Value = 100 | line 3 do {press tab 2 times} wait(!) | lastly for line 4, do end and the E has to be aligned with the W in wait, sorry if this is confusing, i will put a YT tcturial soon also replace the parts where i said userhere with your actual roblox username or it wont work"] = "您需要打开执行器，输入，while true do workspace.usernamehere.Stats.Stamina.Value = 100 wait(!) end | 第1行输入While true do | 然后第2行输入{先点击tab键} workspace.Youruser.Stats.Stamina.Value = 100 | 第3行输入{按tab键2次} wait(!) | 最后第4行，输入end并且E必须与wait中的W对齐，如果这很混乱抱歉，我很快会放一个YT教程，还要将我说userhere的部分替换为您的实际roblox用户名，否则不会工作",
+    ["Update Info"] = "更新信息",
+    ["the footer 1.0.0 determines the update majority ex: if the 1 in 1.0.0 goes up that means its a major update, 2nd number means Minor and 3rd one means mini updates"] = "页脚1.0.0确定更新重要性 例如：如果1.0.0中的1上升意味着主要更新，第2个数字意味着次要，第3个意味着迷你更新",
+    ["1.0.0 UPDATE SCRIPT RELEASE"] = "1.0.0 更新脚本发布",
+    ["The first ever version of the script being realeased, free and keyless"] = "脚本的第一个版本发布，免费且无需密钥",
+    ["1.0.1 Mini Update"] = "1.0.1 迷你更新",
+    ["Added Stamina Toturial v2, fixed the mispelling of ritual in teleports, Changed Load in text, changed named from XChain to XChain, added Radio Tower teleporation, fixed some toggles that aren’t really toggles into buttons but not all because im planning into making them into toggles, moved CHAIN INFO to ESP instead of Main| notice: if your wondering why im making tutorials instead of making them buttons, is that im having a hard time getting the localcharacter name. sorry for bad explanation"] = "添加体力教程v2，修复传送中仪式的拼写错误，更改加载文本，将名称从XChain更改为XChain，添加无线电塔传送，修复一些实际上不是切换的切换为按钮但不是全部，因为我计划将它们变成切换，将CHAIN INFO移动到ESP而不是主菜单| 注意：如果您想知道为什么我制作教程而不是制作按钮，是因为我很难获取本地角色名称。抱歉解释不清",
+    ["1.3.1 Minor-Major Update"] = "1.3.1 次要-主要更新",
+    ["Added inf Stamina and Combat Stamina buttons/toggles, Added a custom theme to stand out, added a seperate tab for lightening, removed bag on head when you turn on third person, CHAIN Torso hitbox expander beta, infinite ammo buttons for all guns in game but deagle might not work, added XSaw infinite gas but might not work because u have to get 0 gas maybe, changed most to some in the character config note, Added themes tab if you didnt like this one, sneakpeak: animation logger is 99.9% next update unless something goes wrong and i will probably make it so toggles actually work"] = "添加无限体力和战斗体力按钮/切换，添加自定义主题以突出，为闪电添加单独标签，当您打开第三人称时移除头上的袋子，CHAIN躯干命中框扩展器测试版，游戏中所有枪支的无限弹药按钮但沙漠之鹰可能不起作用，添加XSaw无限燃料但可能不起作用因为您可能需要先达到0燃料，在角色配置说明中将大多数更改为一些，如果您不喜欢这个主题，添加了主题标签，预告：动画记录器99.9%下次更新，除非出现问题，我可能会使切换实际工作",
+    ["1.4.2 Major-Minor Update"] = "1.4.2 主要-次要更新",
+    ["Added Scripts that give you blueprints in the game, added animations in the animation logger tab, added noclip script in the main tab, added a new misc channel containing tons of stuff, added dangerous user detections in the misc tab, added a new teleport that teleports you out the map so your safe, added a text label in main tab that shows discord invite, made the hitbox size to 6, 6, 6 to 3, 3, 3 instead, hitbox might still be broken as i havent tested it, added a paragraph in updates tab for 1.4.2 lol idk :L"] = "添加在游戏中给您蓝图的脚本，在动画记录器标签中添加动画，在主标签中添加穿墙脚本，添加包含大量内容的新杂项频道，在杂项标签中添加危险用户检测，添加将您传送到地图外的新传送以确保安全，在主标签中添加显示discord邀请的文本标签，将命中框大小从6,6,6改为3,3,3，命中框可能仍然损坏，因为我还没有测试它，在更新标签中为1.4.2添加了一段文字 不知道 :L",
+    ["2.5.2 Massive - Major - Minor Update"] = "2.5.2 大规模 - 主要 - 次要更新",
+    ["Added Detections for Chain in Miscs if he reaches a certain amount of stats, Fixed Inf dodge in the Character Config Tab, Added Aimbot in Character Configs, Added A Gui Tab, Added Radio Gui, Shop Gui, Deconstructor Gui, Watch/Power Gui, Etc, Added A script to remove Adonis Anticheat, Added more images to the script, fixed script not executing on some executors, Added Bypass Beatrap placement in Configs, Made a button that copies the discord link onto your clipboard, Removed some Inf ammo due to it being patched, Fixed some bugs in the script, added tons of more animations in the animation logger, Added Walkspeed in the config tab, Added a entire seperate script to Chapter 1 that features, ESP, teleports, spoofs, etc. if you readed all of this thank you for actually reading :P"] = "添加在杂项中对Chain的检测如果他达到一定数量的统计，修复角色配置标签中的无限闪避，在角色配置中添加自瞄，添加GUI标签，添加无线电GUI，商店GUI，解构器GUI，手表/电力GUI等，添加移除Adonis反作弊的脚本，向脚本添加更多图像，修复脚本在某些执行器上不执行的问题，在配置中添加绕过陷阱放置，制作将discord链接复制到剪贴板的按钮，移除一些无限弹药因为它被修复，修复脚本中的一些错误，在动画记录器中添加大量更多动画，在配置标签中添加移动速度，为第1章添加完整独立脚本，具有ESP，传送，欺骗等功能。如果您阅读了所有这些，感谢您实际阅读 :P",
+    ["2.5.5 Minor Update"] = "2.5.5 次要更新",
+    ["Added artifact esp by <@1355980016533377244>, Updated inf Stamina and Inf Combat Stamina to be more effective and accurate, Fixed The Tabs name and revamped a little bit of the gui, added attack speed tomahawk, Removed inf deagle ammo, inf ak ammo, inf dodge, and inf gas due to it being patched from chain devs. Updated chain hitbox so now it may be useable (not tested). Auto farm artifact script by <@1355980016533377244>."] = "添加由<@1355980016533377244>制作的神器ESP，更新无限体力和无限战斗体力以更有效和准确，修复标签名称并稍微改进GUI，添加攻击速度战斧，移除无限沙漠之鹰弹药，无限AK弹药，无限闪避和无限燃料，因为它被Chain开发者修复。更新Chain命中框所以现在可能可用(未测试)。自动农场神器脚本由<@1355980016533377244>制作。",
+    ["2.6.5 Kinda Major - Minor Update"] = "2.6.5 有点主要 - 次要更新",
+    ["Added Godmode, See Chat, Chain run animation, Become Jason Vorhees, Shiftlock, and Speed all by SegmaBloxyCola"] = "添加上帝模式，查看聊天，Chain奔跑动画，成为Jason Vorhees，Shiftlock和速度，全部由SegmaBloxyCola制作",
+    ["Serenity"] = "宁静",
+    ["Default"] = "默认",
+    ["Amber Glow"] = "琥珀光辉",
+    ["Amethyst"] = "紫水晶",
+    ["Bloom"] = "绽放",
+    ["Dark Blue"] = "深蓝",
+    ["Green"] = "绿色",
+    ["Light"] = "浅色",
+    ["Ocean"] = "海洋",
+    ["Bob"] = "Bob",
+    ["Made Artifact ESP and Artifact Autofarm for the script"] = "为脚本制作神器ESP和神器自动农场"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Neonicf/Ray-field-CHAIN/refs/heads/main/2.6.5%20XCHain%20script'))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
