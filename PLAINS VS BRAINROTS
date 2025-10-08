@@ -1,0 +1,154 @@
+local Translations = {
+    ["BUY SEEDS"] = "购买种子",
+    ["Copuccino Seed"] = "卡布奇诺种子",
+    ["Don Fragola Seed"] = "唐弗拉戈拉种子", 
+    ["Pine-a-Punch Seed"] = "菠萝拳击种子",
+    ["Sunzio Seed"] = "太阳神种子",
+    ["Aubie Seed"] = "奥比种子",
+    ["Dragon Fruit Seed"] = "火龙果种子",
+    ["Pumpkin Seed"] = "南瓜种子",
+    ["Grape Seed"] = "葡萄种子",
+    ["Watermelon Seed"] = "西瓜种子",
+    ["Eggplant Seed"] = "茄子种子",
+    ["Cocotank Seed"] = "可可坦克种子",
+    ["Mr Carrot Seed"] = "胡萝卜先生种子",
+    ["Mango Seed"] = "芒果种子",
+    ["Tomatrio Seed"] = "番茄三重奏种子",
+    ["Shroombino Seed"] = "蘑菇宾诺种子",
+    ["Carnivorous Plant Seed"] = "食肉植物种子",
+    ["Cactus Seed"] = "仙人掌种子",
+    ["Strawberry Seed"] = "草莓种子",
+    ["Sunflower Seed"] = "向日葵种子",
+    ["PLAINS VS BRAINROTS"] = "植物大战脑腐",
+    ["Fast Attack (Bat)"] = "快速攻击(棒球棍)",
+    ["Auto Mobs"] = "自动怪物",
+    ["Collect Cash"] = "收集现金",
+    ["Sell all Brainrots"] = "出售所有脑腐",
+    ["Sell Holding"] = "出售持有物",
+    ["YouTube:Tora IsMe"] = "YouTube:Tora IsMe",
+    ["BUY GEARS"] = "购买装备",
+    ["Handcuffs"] = "手铐",
+    ["Premium Water Bucket"] = "高级水桶",
+    ["Taser"] = "电击枪",
+    ["Riot Potion"] = "暴动药水",
+    ["Speed Potion"] = "速度药水",
+    ["Damage Potion"] = "伤害药水",
+    ["Lucky Potion"] = "幸运药水",
+    ["Water Bucket"] = "水桶",
+    ["Banana Gun"] = "香蕉枪",
+    ["Carrot Launcher"] = "胡萝卜发射器",
+    ["Frost Grenade"] = "冰冻手榴弹",
+    ["Frost Blower"] = "冰冻吹风机"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/PlantsVsBrainrots"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
