@@ -157,6 +157,7 @@ local Translations = {
     ["Ocean"] = "海洋",
     ["Bob"] = "Bob",
     ["Made Artifact ESP and Artifact Autofarm for the script"] = "为脚本制作神器ESP和神器自动农场"
+    ["Show Rayfield"] = "显示Rayfield",
 }
 
 local function translateText(text)
