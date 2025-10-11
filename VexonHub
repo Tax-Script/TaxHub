@@ -1,4 +1,6 @@
 local Translations = {
+    ["VexonHub Mini"] = "VexonHub Mini",
+    ["First version of the VexonHub but rly useful"] = "VexonHub的第一个版本但非常实用",
     ["Main"] = "主菜单",
     ["Misc"] = "杂项",
     ["Fighting"] = "战斗",
