@@ -1,3 +1,15 @@
+local userKey = script_key
+
+local validKeys = {
+    ["TAX"] = true,
+    ["123"] = true,
+    ["ABC"] = true
+}
+
+if not validKeys[userKey] then
+    game.Players.LocalPlayer:Kick("卡密无效")
+    return
+end
 local Translations = {
     ["VexonHub Mini"] = "VexonHub Mini",
     ["First version of the VexonHub but rly useful"] = "VexonHub的第一个版本但非常实用",
