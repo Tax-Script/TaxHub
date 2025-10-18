@@ -1,9 +1,9 @@
 local userKey = script_key
 
 local validKeys = {
-    ["TAX"] = true,
-    ["123"] = true,
-    ["ABC"] = true
+    ["TAX_Free"] = true,
+    ["system"] = true,
+    ["RNTUI"] = true
 }
 
 if not validKeys[userKey] then
