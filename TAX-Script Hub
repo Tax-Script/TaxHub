@@ -24,7 +24,7 @@ bg.BackgroundTransparency = 1
 bg.ZIndex = 0
 TweenService:Create(bg, TweenInfo.new(0.5), {BackgroundTransparency = 0.3}):Play()
 
-local word = "WTB-限时开放"
+local word = "TAX-Hub"
 local letters = {}
 
 local function tweenOutAndDestroy()
@@ -82,7 +82,7 @@ if StellarLibrary:LoadAnimation() then
 end;
 local UserInputService = game:GetService("UserInputService")
 local Window = StellarLibrary:Window({
-        SubTitle = "UI by YUxingchen",
+        SubTitle = "by 诗人",
         Size = game:GetService("UserInputService").TouchEnabled and UDim2.new(0, 500, 0, 350) or UDim2.new(0, 500, 0, 320),
         TabWidth = 140
 })
