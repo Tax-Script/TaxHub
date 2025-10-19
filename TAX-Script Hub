@@ -7,7 +7,8 @@ local validKeys = {
 }
 
 if not validKeys[userKey] then
-    game.Players.LocalPlayer:Kick("卡密无效")
+    setclipboard("QQ群号：885775764")
+    game.Players.LocalPlayer:Kick("卡密错误或已失效, Q群号已复制到剪切板")
     return
 end
 local Players = game:GetService("Players")
