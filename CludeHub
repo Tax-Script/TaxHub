@@ -1,7 +1,7 @@
 local userKey = Custom_key
 
 local validKeys = {
-    ["TAX_Paid"] = true,
+    ["TAX_Free"] = true,
     ["system"] = true,
     ["RNTUI"] = true
 }
