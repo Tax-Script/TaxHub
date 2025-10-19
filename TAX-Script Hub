@@ -98,7 +98,7 @@ local Window = StellarLibrary:Window({
         TabWidth = 140
 })
 
-local UniversalTab = Window:Tab("通用功能", "rbxassetid://10723407389")
+local UniversalTab = Window:Tab("部分通用加载器", "rbxassetid://10723407389")
 local BattleTab = Window:Tab("最强战场", "rbxassetid://10723415335") 
 local PlantTab = Window:Tab("植物大战机器人", "rbxassetid://10709782497")
 local SlapTab = Window:Tab("巴掌大战", "rbxassetid://10723407389")
