@@ -1,0 +1,302 @@
+local userKey = Custom_key
+
+local validKeys = {
+    ["TAX_Paid"] = true,
+    ["system"] = true,
+    ["RNTUI"] = true
+}
+
+if not validKeys[userKey] then
+    game.Players.LocalPlayer:Kick("卡密无效")
+    return
+end
+
+local Translations = {
+    ["Home"] = "主页",
+    ["Main"] = "主菜单",
+    ["Morph"] = "变形",
+    ["Combat"] = "战斗",
+    ["Misc"] = "杂项",
+    ["Game TP"] = "游戏传送",
+    ["Mastery"] = "精通",
+    ["Badge"] = "徽章",
+    ["Anti"] = "反制",
+    ["Admin"] = "管理员",
+    ["Player"] = "玩家",
+    ["Settings"] = "设置",
+    ["Developers"] = "开发者",
+    ["Other"] = "其他",
+    ["Boba Gaming"] = "波霸游戏",
+    ["Save"] = "保存",
+    ["Credits"] = "制作人员",
+    ["others"] = "其他",
+    ["paulparasplaythis"] = "保罗帕拉斯玩这个",
+    ["infinite yield"] = "iy指令",
+    ["LordClude"] = "LordClude",
+    ["Ban yourself your noob"] = "封禁自己",
+    ["Void"] = "虚空",
+    ["Teleports"] = "传送",
+    ["No one shot glove"] = "非一击手套",
+    ["Killstreak only"] = "仅连杀模式",
+    ["Slap Royale"] = "巴掌大逃杀",
+    ["Elude Maze"] = "逃脱迷宫",
+    ["Null Zone"] = "虚无区域",
+    ["Guide"] = "指南",
+    ["Slap Farm Universal"] = "通用巴掌农场",
+    ["Slap Aura"] = "巴掌光环",
+    ["Auto Enter Arena"] = "自动进入竞技场",
+    ["Godmode Reset Character"] = "上帝模式重置角色",
+    ["Glove ESP"] = "手套透视",
+    ["Retro Ability"] = "复古能力",
+    ["Spam Retro Ability"] = "刷复古能力",
+    ["Select Player HomeRun"] = "选择玩家本垒打",
+    ["HomeRun Kill Player"] = "本垒打击杀玩家",
+    ["Enabled"] = "已启用",
+    ["Get Tycoon"] = "获取大亨",
+    ["Get Trap"] = "获取陷阱",
+    ["Arena"] = "竞技场",
+    ["Slapple Farm"] = "slapple农场",
+    ["Slapple Island"] = "slapple岛",
+    ["Moai Island"] = "摩艾岛",
+    ["infinite phase"] = "无限相位",
+    ["Safe Spot"] = "安全点",
+    ["Cannon Island"] = "炮台岛",
+    ["Auto win Tournament"] = "自动赢得锦标赛",
+    ["Select Emotes"] = "选择表情",
+    ["Floss"] = "牙线舞",
+    ["Infinite Reverse"] = "无限反转",
+    ["Groove"] = "律动",
+    ["Infinite irvisible"] = "无限隐形",
+    ["use in lobby"] = "在大厅使用",
+    ["Headless"] = "无头",
+    ["Helicopter"] = "直升机",
+    ["Kick"] = "踢",
+    ["Get all Sword"] = "获取所有剑",
+    ["infinite golden"] = "无限黄金",
+    ["use in arena"] = "在竞技场使用",
+    ["Laugh"] = "大笑",
+    ["Parker"] = "帕克",
+    ["Cloud Speed"] = "云速度",
+    ["Spasm"] = "痉挛",
+    ["Auto Set the Cloud Speed"] = "自动设置云速度",
+    ["Thriller"] = "惊悚",
+    ["Auto Click Tycoon"] = "自动点击大亨",
+    ["Destroy all tycoon"] = "摧毁所有大亨",
+    ["makes you lag"] = "会让你卡顿",
+    ["Spam Zombie Sound"] = "刷僵尸音效",
+    ["Spam Error Sound"] = "刷错误音效",
+    ["Select Animations"] = "选择动画",
+    ["Fort"] = "堡垒",
+    ["Brick"] = "砖块",
+    ["Equip Fort"] = "装备堡垒",
+    ["Equip Brick"] = "装备砖块",
+    ["Be invisible"] = "隐身",
+    ["to avoid ban"] = "避免封禁",
+    ["Auto Fling brick"] = "自动甩砖",
+    ["Auto all Mastery"] = "自动全部精通",
+    ["On The Slap Aura"] = "在巴掌光环上",
+    ["Spin"] = "旋转",
+    ["Bus"] = "巴士",
+    ["Equip Spin"] = "装备旋转",
+    ["Equip Bus"] = "装备巴士",
+    ["tp to safespot"] = "传送到安全点",
+    ["pls on DeathBarrier and anti afk"] = "请在死亡屏障和防挂机上",
+    ["Bomb"] = "炸弹",
+    ["Equip Bomb"] = "装备炸弹",
+    ["Auto Spawn Bus"] = "自动生成巴士",
+    ["Auto Bomb Throw"] = "自动投掷炸弹",
+    ["Auto Slap People"] = "自动巴掌玩家",
+    ["Enable the Slap Aura first"] = "先启用巴掌光环",
+    ["Badges"] = "徽章",
+    ["Slap Royale Badges"] = "巴掌大逃杀徽章",
+    ["Get Pyscho"] = "获取精神病",
+    ["Get Chain"] = "获取链子",
+    ["Get Bomb"] = "获取炸弹",
+    ["Get Warp"] = "获取扭曲",
+    ["Get Plank"] = "获取木板",
+    ["Auto get all egg"] = "自动获取所有蛋",
+    ["Accegt Question finst"] = "接受问题首先",
+    ["tp to Egging over it"] = "传送到蛋上",
+    ["Get Blasphemy"] = "获取亵渎",
+    ["Get Fish"] = "获取鱼",
+    ["Get FrostBite"] = "获取冻伤",
+    ["Get Admin Glove"] = "获取管理员手套",
+    ["Get Boxer glove"] = "获取拳击手套",
+    ["Get Bob"] = "获取鲍勃",
+    ["Get Swordfighter"] = "获取剑士",
+    ["Kill all"] = "杀死全部",
+    ["Cet Lone Orange, duck, knife"] = "获取孤独橙子、鸭子、刀",
+    ["Get Iceskate"] = "获取冰鞋",
+    ["Get Lamp"] = "获取灯",
+    ["Get Schlop"] = "获取史洛普",
+    ["Auto Farm Jet and Phase"] = "自动刷喷气和相位",
+    ["Auto Jet and Phase Glitch"] = "自动喷气和相位故障",
+    ["Siphon Farm"] = "虹吸农场",
+    ["Gift Farm"] = "礼物农场",
+    ["Antis"] = "反制",
+    ["Extra"] = "额外",
+    ["Anti's"] = "反制",
+    ["Anti fling"] = "反甩飞",
+    ["Anti Admin"] = "反管理员",
+    ["Anti Touchey"] = "反触碰",
+    ["Anti Kick"] = "反踢出",
+    ["Anti Lag"] = "反延迟",
+    ["Anti Ragdoll"] = "反布娃娃",
+    ["Anti Touch Overkill"] = "反触碰过度",
+    ["Anti Void"] = "反虚空",
+    ["Anti admin message"] = "反管理员消息",
+    ["Anti Deathbarrier"] = "反死亡屏障",
+    ["Anti Eggler"] = "反蛋人",
+    ["Anti Brazil"] = "反巴西",
+    ["Anti killstreak"] = "反连杀",
+    ["Anti Timestop"] = "反时间停止",
+    ["Anti Cube of Death"] = "反死亡立方",
+    ["Anti Squid"] = "反鱿鱼",
+    ["Anti conveyor"] = "反传送带",
+    ["Anti Zahando"] = "反扎汉多",
+    ["Anti Pusher"] = "反推手",
+    ["Anti Booster"] = "反助推器",
+    ["Visual"] = "视觉",
+    ["FE"] = "FE",
+    ["dien't and no touchey"] = "死亡和无触碰",
+    ["Edgelord Admin"] = "边缘领主管理员",
+    ["Minecraft"] = "我的世界",
+    ["Kick All FE"] = "踢出所有FE",
+    ["King Sbeve"] = "国王斯比夫",
+    ["Get [Staff] ChatTag"] = "获取[Staff]聊天标签",
+    ["Power"] = "力量",
+    ["Set Walk Speed"] = "设置行走速度",
+    ["Set Fov"] = "设置视野",
+    ["Set Jump Power"] = "设置跳跃力量",
+    ["Set Gravity"] = "设置重力",
+    ["Reset Speed"] = "重置速度",
+    ["Reset Fov"] = "重置视野",
+    ["Reset Jump"] = "重置跳跃",
+    ["Reset Gravity"] = "重置重力",
+    ["Combat Setting"] = "战斗设置",
+    ["Fly"] = "飞行",
+    ["Slap Aura Range"] = "巴掌光环范围",
+    ["Slap Aura Size"] = "巴掌光环大小",
+    ["Retro Spam Speed"] = "复古刷速",
+    ["Version"] = "版本",
+    ["Build date"] = "构建日期",
+    ["Build type"] = "构建类型",
+    ["Registered to"] = "注册给",
+    ["Subscription till"] = "订阅至",
+    ["neverlose.cc © 2020"] = "neverlose.cc © 2020",
+    ["Dpi Scale"] = "DPI缩放",
+    ["Draggable"] = "可拖动",
+    ["Style"] = "样式"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/Slap-Battles-Scripts/refs/heads/main/CludeHub"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
