@@ -1,4 +1,15 @@
--- // STELLAR 加载界面
+local userKey = script_key
+
+local validKeys = {
+    ["TAX-Free Script"] = true,
+    ["exbujollwaxbo5"] = true,
+    ["fhiwaxvvxzki158oj"] = true
+}
+
+if not validKeys[userKey] then
+    game.Players.LocalPlayer:Kick("卡密无效")
+    return
+end
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local Lighting = game:GetService("Lighting")
