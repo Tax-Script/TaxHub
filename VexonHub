@@ -1,1 +1,341 @@
-return(function(...)local S={"\073\105\074\068\106\073\055\086\072\097\119\121\112\097\069\061";"","\049\121\065\071\106\067\048\108\049\065\061\061";"\072\102\070\107\083\102\116\104","\055\069\118\099\112\097\088\114\049\102\068\079\049\069\105\122\053\056\053\061";"\073\105\074\117\083\107\061\061","\106\073\052\109\112\099\054\061";"\098\066\047\118\112\102\047\118\083\073\055\086\083\056\088\071";"\075\056\070\067\106\110\086\068\083\056\054\061","\069\051\086\057\055\105\122\101\098\069\072\088\112\071\116\050\072\066\081\061","\043\102\054\070\069\066\052\088\057\071\072\057\050\117\122\069";"\112\102\119\118\057\100\061\061";"\083\066\074\115\083\066\119\118","\072\066\088\055\050\076\108\115\053\069\119\051\089\120\047\105\057\107\061\061";"\047\118\072\087\116\076\116\050\072\056\069\114\098\097\072\116";"\098\066\116\109\057\073\122\118\073\066\068\071\089\053\061\061";"\047\084\072\071\049\069\107\107\106\102\105\050\075\076\122\108\069\110\120\061","\098\056\119\115\106\097\074\068";"\112\110\120\061","\069\120\072\057\057\084\105\052";"\072\097\074\114\072\076\052\108\112\056\098\061","\112\069\083\070\047\099\072\090\098\069\086\109\057\105\071\043";"\072\097\119\121\112\097\069\061";"\073\105\074\108\112\056\055\071\089\100\061\061";"\102\097\069\061";"\098\056\047\068\112\099\106\071";"\106\066\119\068\106\053\061\061","\106\099\116\105\083\065\061\061","\047\097\119\068\098\097\047\109\054\120\055\071\072\097\047\051\072\097\047\084\054\053\061\061";"\080\098\121\111\052\057\068\048\053\114\054\061","\116\066\072\047\075\118\108\051\043\043\122\097\098\043\084\105";"\098\099\055\109\057\102\070\117";"\083\066\086\086\098\065\061\061","\089\073\108\115\049\119\052\097\047\056\047\048\098\047\098\114\049\053\061\061";"\106\056\088\103\112\099\054\061";"\072\097\074\115\072\102\105\121\106\073\054\061","\106\066\105\086\072\097\116\048";"\054\053\055\073\070\109\048\055\113\116\098\069\118\117\097\043\082\111\088\076\071\079\079\075\085\072\085\073\079\070\065\117\090\057\097\087\049\097\054\066\089\122\068\055\067\073\106\071\119\052\056\080\050\097\122\079\121\101\048\098\050\114\065\068\107\120\078\114\103\116\078\053\049\055\074\116\113\050\053\086\056\053\099\047\117\104\103\051\078\070\055\097\067\052\070\090\109\103\070\090\054\053\061\061";"\098\097\116\086\112\097\107\061";"\073\105\074\113\106\102\081\061","\072\114\119\111\089\056\055\057\057\069\106\047\098\120\119\083\050\065\061\061";"\098\118\070\081\057\066\052\119\089\119\108\054\055\047\069\061";"\069\043\119\117\069\073\119\051\098\043\119\119\106\118\048\107\089\043\100\061";"\112\097\074\086\106\076\116\118\098\056\071\115\106\107\061\061","\049\065\061\061","\083\117\071\118\106\053\061\061";"\112\110\054\061","\050\076\055\118\098\120\072\071\072\100\061\061";"\112\097\047\115"}for I,E in ipairs({{337934+-337933,619717+-619668};{-789948+789949;-970041+970071};{-921058-(-921089);-763612+763661}})do while E[-749570+749571]<E[-1041637-(-1041639)]do S[E[-704666-(-704667)]],S[E[-765598-(-765600)]],E[466551+-466550],E[-997695-(-997697)]=S[E[70209+-70207]],S[E[-677421+677422]],E[251829-251828]+(-323843-(-323844)),E[170257+-170255]-(899541-899540)end end local function I(I)return S[I-(293886-230361)]end do local I=string.sub local E=S local o={i=206270+-206217;j=-280817-(-280842),a=-502639+502645;Z=94241-94183;S=-393116+393140;K=985465-985453,["\051"]=-754803+754838;["\048"]=136577-136537;p=14088+-14061,V=-887553-(-887586);["\056"]=220580+-220542;x=-652091+652095,["\053"]=-314837-(-314853);M=-541064-(-541126),["\054"]=719772+-719764;Q=30328+-30272;I=127717+-127694;v=892737-892685,E=68060-68040;["\055"]=-608353+608370;k=345016+-344968;g=-186971-(-187018);d=67705-67705,U=-446684-(-446715);n=407053-407050;J=-866224-(-866285),O=585457-585415;z=-408273+408274,N=132115+-132052;R=139931-139872;t=-618844+618857,["\047"]=-506390-(-506411);["\050"]=-98906+98924,o=-582085-(-582100);m=531182+-531132;c=950866+-950811,f=-121070+121092,G=-634736+634773;B=1001793+-1001739;Y=-760508-(-760538),W=-912481-(-912492),s=21070-21024,y=894102-894068;r=-615762-(-615813),L=-511772-(-511779);C=-1005797+1005799,q=464445-464401,b=-482266+482294;h=-969776-(-969819),["\043"]=-1016366+1016385;l=-842497-(-842538),u=256517+-256478;["\052"]=-224935+224944;X=-929041-(-929090),A=-908771-(-908803);w=-904600-(-904605),e=-286346+286356;D=-624034-(-624079);T=979785+-979749;["\049"]=304646-304632;F=-874479+874536,P=303584+-303524;H=-390406-(-390435);["\057"]=-271887-(-271913)}local i=string.len local q=table.insert local u=table.concat local e=string.char local D=type local Q=math.floor for S=620918-620917,#E,-958589+958590 do local A=E[S]if D(A)=="\115\116\114\105\110\103"then local D=i(A)local W={}local g=-116153+116154 local x=624725-624725 local y=1045596-1045596 while g<=D do local S=I(A,g,g)local E=o[S]if E then x=x+E*(-76748+76812)^((34503+-34500)-y)y=y+(526732+-526731)if y==-670856-(-670860)then y=-896738+896738 local S=Q(x/(-200506+266042))local I=Q((x%(1037388+-971852))/(917302+-917046))local E=x%(-160734-(-160990))q(W,e(S,I,E))x=-919583-(-919583)end elseif S=="\061"then q(W,e(Q(x/(951802+-886266))))if g>=D or I(A,g+(-359458+359459),g+(30745-30744))~="\061"then q(W,e(Q((x%(936161-870625))/(-467824+468080))))end break end g=g+(-1018210-(-1018211))end E[S]=u(W)end end end return(function(S,o,i,q,u,e,D,x,g,R,b,y,l,F,k,E,G,Q,w,A,W)b,x,W,y,Q,F,g,k,R,w,E,G,l,A=function(S,I)local o=x(I)local i=function(...)return E(S,{...},I,o)end return i end,function(S)for I=1045453+-1045452,#S,-1016841-(-1016842)do A[S[I]]=A[S[I]]+(-693806+693807)end if i then local E=i(true)local o=u(E)o[I(665295+-601765)],o[I(-476149-(-539710))],o[I(76819-13273)]=S,y,function()return 917731-193819 end return E else return q({},{[I(480404+-416843)]=y,[I(-92912+156442)]=S,[I(297845-234299)]=function()return 936839+-212927 end})end end,function()g=g+(984434-984433)A[g]=-331422+331423 return g end,function(S)local I,E=-484837-(-484838),S[-1036510-(-1036511)]while E do A[E],I=A[E]-(-426608-(-426609)),(-734147-(-734148))+I if-988252-(-988252)==A[E]then A[E],Q[E]=nil,nil end E=S[I]end end,{},function(S,I)local o=x(I)local i=function()return E(S,{},I,o)end return i end,507365-507365,function(S)A[S]=A[S]-(-982507-(-982508))if 604724+-604724==A[S]then A[S],Q[S]=nil,nil end end,function(S,I)local o=x(I)local i=function(i,q,u,e,D)return E(S,{i,q,u,e,D},I,o)end return i end,function(S,I)local o=x(I)local i=function(i)return E(S,{i},I,o)end return i end,function(E,i,q,u)local m,j,z,Y,t,J,d,H,O,v,N,C,L,P,X,U,A,x,c,Z,K,f,g,B,T,r,p,M,b,y,D,a,V,n while E do if E<8992715-(-295419)then if E<3770195-(-930532)then if E<-150842+2274776 then if E<170024-(-1012154)then if E<762931+144894 then if E<1466806-650915 then if E<986252-457840 then B=-621598+621598 C=#X c=C==B E=c and 11616317-278138 or 8948362-(-717105)else E=true E=209914-(-939256)end else E=N E=Y and 11082392-822328 or 184477+2793128 D=Y end else if E<1522833-454944 then x=5345780-(-1032264)D=-518719+14663844 g=I(187942-124411)A=g^x E=D-A A=E D=I(789371-725845)E=D/A D={E}E=S[I(-1004760+1068325)]else E=l(-580485+12600430,{y})Z={E()}D={o(Z)}E=S[I(589222-525656)]end end else if E<1818527-499352 then if E<-221563+1431766 then E=Q[q[90989-90979]]g=Q[q[-1046336-(-1046347)]]A[E]=g E=Q[q[757709+-757697]]g={E(A)}D={o(g)}E=S[I(-182950-(-246522))]else E=Q[q[-661157+661164]]E=E and 3013062-251185 or 16965557-841209 end else if E<1023318-(-680755)then n=629744-629743 B=-883449+883455 E=Q[f]Z=E(n,B)E=I(342345+-278792)B=I(-166840+230393)S[E]=Z n=S[B]B=708765-708763 E=n>B E=E and 7584295-(-441651)or 7895957-313885 else A=i x=I(-513107-(-576645))g=W()E=true f=I(704012+-640467)Q[g]=E D=S[x]x=I(-722672-(-786215))E=D[x]x=W()Q[x]=E y=W()E=l(403170+15022721,{})Q[y]=E b=W()j=R(-344700+10695543,{b})E=false Q[b]=E K=S[f]f=K(j)D=f E=f and 10823199-586875 or 9441698-749995 end end end else if E<1018096+2382793 then if E<-54770+3037845 then if E<3323681-414538 then if E<3162255-308105 then A=I(-203360+266922)x=728551-728551 E=S[A]g=Q[q[-163658-(-163666)]]A=E(g,x)E=16350342-225994 else y=nil f=nil E=13131403-617819 K=nil end else N=I(620732+-557173)Y=S[N]D=Y E=577410+9682654 end else if E<3822121-607545 then x=-38183-(-38344)g=Q[q[-787701+787703]]A=g*x g=815125+6871839595626 D=A+g A=35184372948628-859796 g=15433-15432 E=D%A Q[q[386000+-385998]]=E E=12484862-(-833885)A=Q[q[-568555+568558]]D=A~=g else E=D and 108837+15888242 or 1355359-74046 end end else if E<5084587-926198 then if E<268716+3712845 then z=k(z)d=k(d)P=nil v=k(v)V=k(V)T=k(T)r=k(r)E=-533442+15750613 else D=p E=M E=222765+5051573 end else if E<5265217-811761 then E=true E=E and 53999+1270570 or 9550311-(-521653)else x=Q[q[797448+-797442]]E=6807558-24953 g=x==A D=g end end end end else if E<816327+6243976 then if E<6807485-475573 then if E<-1048229+6819409 then if E<310580+4952140 then if E<5006988-(-69680)then J=-535788-(-535788)v=W()z=418366-418365 T=346425-346325 r=I(882432+-818865)Q[v]=O D=S[r]d=541483-541228 r=I(414361+-350788)E=D[r]r=-309917-(-309918)L=I(-705804-(-769331))D=E(r,T)T=-19224-(-19224)r=W()Q[r]=D E=Q[f]P=-267985-(-267987)H=-273325+283325 D=E(T,d)T=W()d=718387+-718386 Q[T]=D E=Q[f]V=Q[r]D=E(d,V)d=W()Q[d]=D D=Q[f]V=D(z,P)D=-669976-(-669977)E=V==D V=W()P=I(-665770+729321)D=I(-356511+420069)Q[V]=E M=S[L]a=Q[f]t={a(J,H)}L=M(o(t))M=I(533111-469560)p=L..M E=I(578586+-515052)E=c[E]z=P..p E=E(c,D,z)z=W()Q[z]=E P=I(950862-887317)D=S[P]p=F(394879+9274063,{f,v,N,x,g;C;V;z,r,d,T;Y})P={D(p)}E={o(P)}P=E E=Q[V]E=E and 9823121-1038909 or 13284736-(-843574)else A=Q[q[927402-927401]]D=#A A=-981006-(-981006)E=D==A E=E and 3724881-664527 or 869678+5144884 end else Q[g]=D E=-917931+4856672 end else if E<-922177+6934568 then g=Q[q[-485640-(-485642)]]x=Q[q[-690493-(-690496)]]A=g==x E=-421695+3699648 D=A else x=I(88336-24807)g=S[x]x=I(988548-925016)A=g[x]x=Q[q[102418+-102417]]g={A(x)}E=S[I(1064335-1000798)]D={o(g)}end end else if E<784989+5911634 then if E<650439+5900942 then x=x+b f=not K g=x<=y g=f and g f=x>=y f=K and f g=f or g f=14680848-236736 E=g and f g=771087-(-430745)E=E or g else D={}E=S[I(721923-658374)]end else if E<6103487-(-816872)then E=1812187-530874 A=nil Q[q[887987-887982]]=D else c=C T=c X[c]=T E=10225048-669408 c=nil end end end else if E<91400+7846797 then if E<788088+6609714 then if E<-280161+7646566 then if E<-580367+7869139 then E=true E=E and 12248096-158686 or-826313+1975483 else Y=195219-195217 x=-754784-(-754816)g=Q[q[1030407+-1030404]]A=g%x m=-69863-(-69876)y=Q[q[566319+-566315]]f=Q[q[87282-87280]]c=Q[q[-302606-(-302609)]]X=c-A c=-880417-(-880449)U=X/c N=m-U j=Y^N K=f/j b=y(K)y=4295903198-935902 j=-720254-(-720255)x=b%y b=-369318+369320 y=b^A g=x/y y=Q[q[-90315-(-90319)]]f=g%j j=4294020450-(-946846)K=f*j b=y(K)y=Q[q[919614-919610]]K=y(g)x=b+K b=33394-(-32142)Y=-244834+245090 y=x%b f=857386-791850 K=x-y x=nil b=K/f g=nil A=nil f=897191+-896935 E=-369709+6384271 K=y%f j=y-K f=j/Y Y=-554956+555212 j=b%Y N=b-j y=nil m=-240617-(-240873)Y=N/m N={K,f,j;Y}b=nil Q[q[750948-750947]]=N K=nil Y=nil j=nil f=nil end else E=true E=E and-640339+13449578 or 722081+5926105 end else if E<-314870+7770676 then n=I(251366+-187828)j=N Z=S[n]n=I(-983206+1046758)O=Z[n]Z=O(A,j)O=Q[q[-384788-(-384794)]]n=O()C=Z+n c=C+K C=388195+-387939 X=c%C C=x[g]K=X n=-450569-(-450570)Z=K+n O=y[Z]j=nil c=C..O E=-975425+16929763 x[g]=c else B=I(-736905-(-800458))E=S[B]B=I(-311632+375206)S[B]=E E=7591596-(-941133)end end else if E<-983052+9641796 then if E<371900+7857360 then v=I(-481782-(-545356))n=I(130023+-66496)E=S[n]B=S[v]n=E(B)E=I(-983118+1046671)S[E]=n E=909413+7623316 else E=-926637+5129611 end else if E<-971394+9689026 then U=I(991018+-927489)j=I(415304-351775)f=I(622746-559179)K=D D=S[f]f=I(-997749+1061322)E=D[f]f=W()Q[f]=E D=S[j]j=I(-77121+140689)E=D[j]j=E N=E m=S[U]E=m and-65744+15241674 or 1169605-271488 Y=m else p=Q[g]D=p E=p and 13487177-(-690544)or 5015960-(-258378)end end end end end else if E<13186799-19630 then if E<10558467-63328 then if E<1013695+8923760 then if E<742019+8924957 then if E<-868055+10467208 then if E<8526617-(-861508)then t=150566+-150564 E=-193448+4257756 a=P[t]t=Q[z]L=a==t p=L else T=not r C=C+v c=C<=B c=T and c T=C>=B T=r and T c=T or c T=7288290-287809 E=c and T c=10462493-736490 E=E or c end else B=#X T=14159+-14158 C=793302-793301 c=y(C,B)C=K(X,c)B=Q[U]r=C-T c=nil E=35578+347628 v=f(r)B[C]=v C=nil end else if E<9810855-106523 then g=Q[q[-168860-(-168861)]]b=-734169-(-734171)y=-532580+532581 x=g(y,b)g=351914+-351913 A=x==g D=A E=A and-711150+3989103 or 5807333-(-146717)else B=-315499-(-315499)C=#X c=C==B E=8906002-(-759465)end end else if E<10784016-536717 then if E<-418056+10553787 then D={}E=S[I(54742+8818)]else E=9119551-427848 K=Q[b]D=K end else if E<-372588+10656481 then X=I(-476769-(-540314))c=R(693869+15235514,{})Y=W()Q[Y]=D E=Q[f]N=-183317-(-183320)m=498798-498733 D=E(N,m)E=310348+-310348 m=E E=468710-468710 N=W()Q[N]=D U=E n=I(1025599+-962072)D=S[X]X={D(c)}E={o(X)}X=E D=634988+-634986 E=X[D]c=E D=I(631247+-567705)E=S[D]C=Q[x]Z=S[n]n=Z(c)Z=I(494581+-431023)O=C(n,Z)C={O()}D=E(o(C))C=W()Q[C]=D O=Q[N]Z=O O=-905912-(-905913)n=O D=-172177-(-172178)E=14639787-(-577384)O=521135+-521135 B=n<O O=D-n else E=true Q[q[-997863-(-997864)]]=E D={}E=S[I(-607944-(-671472))]end end end else if E<13125687-963729 then if E<-12426+11395896 then if E<119383+11029821 then if E<10111234-(-746219)then Z=m==U O=Z E=791592+12403084 else E=990324+15734231 end else m=nil m=I(-764512-(-828056))C=W()D={}v=W()c={}Q[C]=c B=w(97986+4989501,{C;Y,N,b})L=nil V=I(-546775-(-610305))c=W()Q[c]=B B={}P=I(706314+-642758)f=nil T={}y=nil Q[v]=B X=nil r=I(755126-691563)B=S[r]z=Q[v]d={[V]=z;[P]=L}K=nil b=k(b)r=B(T,d)B=G(15623551-(-311588),{v;C;U,Y,N;c})K=I(376616-313080)j=nil C=k(C)j=I(-581134-(-644667))c=k(c)x=B v=k(v)E=S[I(356297+-292728)]N=k(N)Y=k(Y)U=k(U)g=r f=-188964+20794352633847 b=x(K,f)K=I(670169-606619)y=g[b]b=I(386041-322470)S[b]=y U=-717986+18569003980392 b=S[K]f=S[j]N=x(m,U)Y=g[N]N=I(525182-461628)N=f[N]x=nil j={N(f,Y)}g=nil K=b(o(j))b=K()end else if E<11761346-(-299217)then E=-724365+8119181 else E=-930367+5133341 end end else if E<-300705+13019823 then if E<12786283-196793 then D={g}E=S[I(292894+-229347)]else E=12567468-53884 end else if E<13541364-563301 then D=I(-578299+641852)A=I(-420561-(-484135))E=S[D]D=S[A]A=I(-1925+65499)S[A]=E A=I(598407-534854)E=7044629-(-350187)S[A]=D A=Q[q[-962732-(-962733)]]g=A()else g=Q[q[-418039+418042]]x=-345347-(-345348)A=g~=x E=A and 875453+6463679 or 462922+12855825 end end end end else if E<158906+15049196 then if E<14211878-63107 then if E<-910921+14860115 then if E<485343+12947365 then if E<13683954-483529 then Q[g]=O E=Q[g]E=E and 811521+10050051 or 98587-(-447828)else g=Q[q[354930-354927]]x=-250850+250937 E=12565024-(-567295)A=g*x g=-360808-(-361065)D=A%g Q[q[592260+-592257]]=D end else L=-616291-(-616292)M=P[L]E=15008800-1046122 p=M end else if E<13069033-(-1007135)then Q[g]=p J=916256+-916255 t=Q[d]a=t+J L=P[a]M=m+L L=869307+-869051 E=M%L a=Q[T]L=U+a m=E a=-180596+180852 E=4254439-315698 M=L%a U=M else M=Q[g]E=M and 596773+13250771 or 14087134-124456 p=M end end else if E<15076509-568032 then if E<13901056-(-419479)then t=-247246-(-247247)M=E a=P[t]t=false L=a==t E=L and 8276134-(-1026466)or 488774+3575534 p=L else E=Q[q[356238-356237]]j=-350589+350589 Y=104103+-103848 g=x f=E(j,Y)E=5457919-(-1018799)A[g]=f g=nil end else if E<15146567-257689 then E={}Q[q[-443312+443314]]=E b=35184372130403-41571 D=Q[q[-732805-(-732808)]]y=D E=15374835-(-579503)f=-179254-(-179509)D=g%b Q[q[411574-411570]]=D j=I(280684+-217146)K=g%f f=762009-762007 b=K+f Q[q[773930-773925]]=b f=S[j]j=I(-719572-(-783127))K=f[j]f=K(A)j=403143+-403142 K=I(714710+-651153)x[g]=K Y=f N=40060-40059 K=242072-241981 m=N N=270269+-270269 U=m<N N=j-m else X=I(53728+9801)U=S[X]E=1932942-1034825 X=I(582935-519376)m=U[X]Y=m end end end else if E<15145350-(-799891)then if E<14859955-(-731472)then if E<14828642-(-588724)then if E<14940894-(-395211)then v=not B O=O+n D=O<=Z D=v and D v=O>=Z v=B and v D=v or D v=-569510+5635787 E=D and v D=15764460-399809 E=E or D else Z=Q[g]E=Z and-14041+10860954 or 12765384-(-429292)O=Z end else A=I(-921395-(-984930))D=I(475087+-411525)E=S[D]D=E(A)D={}E=S[I(145559+-81989)]end else if E<16080256-145763 then x=-566469+13356138 g=I(911112-847564)A=g^x D=6101471-(-394500)E=D-A D=I(1014239-950675)A=E E=D/A D={E}E=S[I(770932-707392)]else E=Q[q[2454-2453]]x=E g=i[943359-943357]A=i[598112-598111]E=x[g]E=E and 1028538+11653739 or 14626624-(-18127)end end else if E<-830658+16847039 then if E<-427180+16399369 then X=not U N=N+m j=N<=Y j=X and j X=N>=Y X=U and X j=X or j X=-280524+7703698 E=j and X j=-464947+3370488 E=E or j else Y=l(359903-(-667785),{})D=I(22768-(-40774))y=I(47662+15865)E=S[D]A=Q[q[667635+-667631]]j=I(-453148-(-516693))x=S[y]f=S[j]j={f(Y)}f=780079-780077 K={o(j)}b=K[f]y=x(b)x=I(539083-475525)g=A(y,x)A={g()}D=E(o(A))A=D g=Q[q[663965+-663960]]D=g E=g and 101035+4559042 or 7574340-791735 end else if E<214760+16102743 then E={}x=Q[q[973974+-973965]]g=697127+-697126 y=x x=839866-839865 A=E E=477084+5999634 b=x x=-842058-(-842058)K=b<x x=g-b else C=k(C)C=-413649-(-413905)g=k(g)Y=k(Y)U=nil B=C X=nil N=k(N)x=k(x)j=nil m=nil c=nil C=237249-237248 g=nil x=nil K=nil Y=I(-263194+326732)f=k(f)b=k(b)f=I(-837376-(-900943))K=I(716917-653350)b=S[K]K=I(-94185+157726)y=k(y)j=I(202722+-139193)y=b[K]E=-491210+10046850 v=C b=W()Q[b]=y c=158546+-158545 K=S[f]f=I(660252+-596679)y=K[f]f=S[j]m={}j=I(-708178-(-771710))K=f[j]j=S[Y]Y=I(417860-354321)f=j[Y]X={}Y=W()j=338104-338104 C=-446950-(-446950)Q[Y]=j N=W()U=W()j=1040648+-1040646 Q[N]=j Q[U]=m j={}r=v<C C=c-v m=-955969-(-955969)end end end end end end end E=#u return o(D)end,function(S,I)local o=x(I)local i=function(i,q,u,e)return E(S,{i;q,u,e},I,o)end return i end,function(S,I)local o=x(I)local i=function(i,q,u)return E(S,{i;q,u},I,o)end return i end,{}return(b(1043170+803566,{}))(o(D))end)(getfenv and getfenv()or _ENV,unpack or table[I(316281+-252722)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+local userKey = script_key
+
+local validKeys = {
+    ["TAX_Free"] = true,
+    ["system"] = true,
+    ["RNTUI"] = true
+}
+
+if not validKeys[userKey] then
+    game.Players.LocalPlayer:Kick("卡密无效")
+    return
+end
+local Translations = {
+    ["VexonHub Mini"] = "VexonHub Mini",
+    ["First version of the VexonHub but rly useful"] = "VexonHub的第一个版本但非常实用",
+    ["Main"] = "主菜单",
+    ["Misc"] = "杂项",
+    ["Fighting"] = "战斗",
+    ["Tech"] = "技术",
+    ["Lag-Ping"] = "延迟与网络",
+    ["Animations"] = "动画",
+    ["Places"] = "地点",
+    ["Moveset"] = "技能组合",
+    ["Fling"] = "甩飞",
+    ["Information"] = "信息",
+    ["Copy Discord Link (join for more info)"] = "复制Discord链接（加入以获取更多信息）",
+    ["Autos"] = "自动功能",
+    ["Select Place"] = "选择地点",
+    ["Where Do You Want It To Auto Place To?"] = "您希望自动放置到何处？",
+    ["Auto Void/Place"] = "自动虚空/放置",
+    ["Tp Back Old Pos"] = "传送回原位置",
+    ["Auto Whirlwind Dunk"] = "自动旋风扣篮",
+    ["Auto WallCombo + WallCombo Everywhere"] = "自动墙连+任意处墙壁连招",
+    ["Antis"] = "反制功能",
+    ["Anti Invisibility"] = "反隐身",
+    ["Anti Death Counter"] = "反死亡计数",
+    ["Anti-AFK"] = "防挂机",
+    ["OP"] = "无敌模式",
+    ["No Dash Cool Down"] = "无冲刺冷却",
+    ["Invisiblity"] = "隐身",
+    ["ESP"] = "透视",
+    ["Esp Death Counter"] = "透视死亡计数",
+    ["Esp Ult Bar"] = "透视终极技能条",
+    ["ESP Everyone"] = "全员透视",
+    ["Movement"] = "移动",
+    ["Speed (V Key On/Off)"] = "速度（V键开关）",
+    ["Speed Boost Value"] = "速度提升值",
+    ["Jump"] = "跳跃",
+    ["Jump Boost Value"] = "跳跃提升值",
+    ["No Stun"] = "无眩晕",
+    ["Character"] = "角色",
+    ["Fake Downslam"] = "假下砸",
+    ["Auto Safe Zone"] = "自动安全区",
+    ["Spawn Fe Stone Effects"] = "生成FE石头效果",
+    ["Roast Dead Players"] = "嘲讽死亡玩家",
+    ["Grape Dummy :>"] = "葡萄假人 :>",
+    ["Map"] = "地图",
+    ["Pixel"] = "像素",
+    ["Void"] = "虚空",
+    ["Darkness"] = "黑暗",
+    ["Mountain"] = "山脉",
+    ["Counter"] = "计数器",
+    ["Atomic Base"] = "原子基地",
+    ["Atomic Base Up"] = "原子基地上层",
+    ["Atomic Slash"] = "原子斩击",
+    ["Universal Scripts"] = "通用脚本",
+    ["Inf Yield"] = "iy指令",
+    ["Dex Explorer"] = "Dex",
+    ["Keyboard"] = "键盘",
+    ["Anim Logger"] = "动画日志",
+    ["Fly V3"] = "飞行V3",
+    ["VFX Logger"] = "特效日志",
+    ["Auto Block V10"] = "自动格挡V10",
+    ["The Strongest Battle Grounds"] = "最强战场  原作者TheVexon   汉化制作Tax（均为机翻 如有错误请谅解）",
+    ["Search"] = "搜索",
+    ["Player"] = "玩家",
+    ["ServerHop"] = "切换服务器",
+    ["Rejoin"] = "重新加入",
+    ["Reset"] = "重置",
+    ["Fixcam"] = "修复相机",
+    ["Random"] = "随机功能",
+    ["Buy limited Emotes (You can buy limited emotes that have been removed from the game with robux)"] = "购买限定表情（可以用Robux购买已下架的限定表情）",
+    ["Strange Humanoid Mod (WallCombo Everywhere + Ragdoll Hit + NoVelocity Dash + Upsitedown)"] = "奇异人形模组（随处墙连+布娃娃击倒+无速度冲刺+倒立模式）",
+    ["Strange Attacks (All moves fall from above)"] = "奇异攻击（所有招式从上方落下）",
+    ["Baldy Dummy"] = "秃头假人",
+    ["Crazy Spin"] = "疯狂旋转",
+    ["Crazy Dance"] = "疯狂舞蹈",
+    ["Anti Fly Bypass"] = "防飞行绕过",
+    ["Tools"] = "工具",
+    ["Place Tools"] = "放置工具",
+    ["What Place Tool Do You Want?"] = "您想要什么放置工具？",
+    ["TrashCan Tool"] = "垃圾桶工具",
+    ["TP Tool (Anim)"] = "传送工具（动画）",
+    ["TP Tool (Normal)"] = "传送工具（普通）",
+    ["Run Tool"] = "奔跑工具",
+    ["Super Run Tool"] = "超级奔跑工具",
+    ["Jerk Of Tool"] = "急停工具",
+    ["Invis Block Tool (Buggy)"] = "隐形方块工具（有bug）",
+    ["Tech Scripts"] = "技术脚本",
+    ["M1 Reset Script"] = "M1重置脚本",
+    ["Auto Kyoto Script"] = "自动京都脚本",
+    ["Loop Dash Script"] = "循环冲刺脚本",
+    ["Oreo Dash Script"] = "奥利奥冲刺脚本",
+    ["Tornado Dash Script"] = "龙卷风冲刺脚本",
+    ["Supa Dash Script"] = "超级冲刺脚本",
+    ["BackDash Script (MOBILE)"] = "后冲脚本（手机）",
+    ["Backdash Script (PC)"] = "后冲脚本（PC）",
+    ["Auto Techs"] = "自动技巧",
+    ["True DownSlam"] = "真下砸",
+    ["Auto Twisted Tech"] = "自动扭曲技巧",
+    ["Instant Twisted Tech"] = "瞬间扭曲技巧",
+    ["Auto Supa Stream"] = "自动超级流",
+    ["Auto Supa Uppercut"] = "自动超级上勾拳",
+    ["Flowing + Grasp"] = "流动+抓取",
+    ["Upper + Grasp"] = "上勾+抓取",
+    ["Anti Lag"] = "反延迟",
+    ["Destroy Spawned Stones (By ItsLouisPlayz)"] = "清除生成的石头（由ItsLouisPlayz制作）",
+    ["Low Graphics"] = "低画质",
+    ["Hide Parts"] = "隐藏部件",
+    ["Trees"] = "树木",
+    ["Walls"] = "墙壁",
+    ["Grass"] = "草地",
+    ["Benches"] = "长椅",
+    ["Play/Stop"] = "播放/停止",
+    ["Play Animation"] = "播放动画",
+    ["Use Anim Ids To Play Anim"] = "使用动画ID播放动画",
+    ["No Animation"] = "无动画",
+    ["Characters"] = "角色",
+    ["Special Animations"] = "特殊动画",
+    ["Saitama Animations"] = "埼玉动画",
+    ["Carou Animations"] = "饿狼动画",
+    ["Genos Animations"] = "杰诺斯动画",
+    ["Sonic Animations"] = "索尼克动画",
+    ["MetalBat Animations"] = "金属球棒动画",
+    ["Atomic Samurai Animations"] = "原子武士动画",
+    ["Tatsumaki Animations"] = "龙卷动画",
+    ["Suiryu Animations"] = "水龙动画",
+    ["TP Stuff"] = "传送功能",
+    ["Teleport Panel"] = "传送面板",
+    ["TP Frozen Lock"] = "传送冻结锁定",
+    ["TP Dummy"] = "传送假人",
+    ["Teleport Places"] = "传送地点",
+    ["Middle Of Map"] = "地图中心",
+    ["Prison"] = "监狱",
+    ["Montain"] = "山脉",
+    ["Door 1"] = "门1",
+    ["Door 2"] = "门2",
+    ["Corner 1"] = "角落1",
+    ["Corner 2"] = "角落2",
+    ["Corner 3"] = "角落3",
+    ["Corner 4"] = "角落4",
+    ["Atomic Slash Up"] = "原子斩击上层",
+    ["Little SafeZone"] = "小安全区",
+    ["Big SafeZone"] = "大安全区",
+    ["Smoke"] = "烟雾",
+    ["Character Movesets"] = "角色技能组合",
+    ["The Garbage Ghost (Universal)"] = "垃圾幽灵（通用）",
+    ["Trash-Can Man (Universal)"] = "垃圾桶人（通用）",
+    ["StarGlicher (Universal)"] = "星影（通用）",
+    ["JK (Saitama)"] = "JK（埼玉）",
+    ["Kenjihin (Saitama)"] = "剑士（埼玉）",
+    ["Gojo 1 (Saitama)"] = "五条悟1（埼玉）",
+    ["Gojo 2 (Saitama)"] = "五条悟2（埼玉）",
+    ["Gojo 3 (Saitama)"] = "五条悟3（埼玉）",
+    ["Mahito (Saitama)"] = "真人（埼玉）",
+    ["Yuji/Sukuna (Saitama)"] = "虎杖/宿傩（埼玉）",
+    ["Ichigo Kurosaki (Saitama)"] = "黑崎一护（埼玉）",
+    ["JJS Gojo (Saitama)"] = "JJS五条悟（埼玉）",
+    ["Hakari (Saitama)"] = "羽狩（埼玉）",
+    ["Arcaura (Garou)"] = "阿卡乌拉（饿狼）",
+    ["KJ (Garou)"] = "KJ（饿狼）",
+    ["Chainsaw Man (Garou)"] = "电锯人（饿狼）",
+    ["Okarun (Garou)"] = "小鸦（饿狼）",
+    ["Sukuna (Garou)"] = "宿傩（饿狼）",
+    ["Gojo (Garou)"] = "五条悟（饿狼）",
+    ["Cyber Psycho (Garou)"] = "赛博精神病（饿狼）",
+    ["Suriyu (Garou)"] = "水龙（饿狼）",
+    ["Goku V2 (Garou)"] = "悟空V2（饿狼）",
+    ["Minos Prime (Garou)"] = "米诺斯Prime（饿狼）",
+    ["Toji (Atomic Samurai)"] = "东次（原子武士）",
+    ["Toji 2 (Atomic Samurai)"] = "东次2（原子武士）",
+    ["Sukuna (Atomic Samurai)"] = "宿傩（原子武士）",
+    ["Toji (Sonic)"] = "东次（索尼克）",
+    ["Voltra (Sonic)"] = "沃尔特拉（索尼克）",
+    ["APOPHENIA (Metal Bat)"] = "幻觉（金属球棒）",
+    ["Copy Discord Link"] = "复制Discord链接",
+    ["Player Selection"] = "玩家选择",
+    ["Select Player"] = "选择玩家",
+    ["Enter Player Name To Select Target"] = "输入玩家名称选择目标",
+    ["Player Name"] = "玩家名称",
+    ["Player Actions"] = "玩家操作",
+    ["Teleport to Player"] = "传送到玩家",
+    ["Loop Teleport"] = "循环传送",
+    ["Fling Player"] = "甩飞玩家",
+    ["Loop Fling"] = "循环甩飞",
+    ["View Player (3 sec)"] = "查看玩家（3秒）",
+    ["Loop View"] = "循环查看",
+    ["AimLock (Camera)"] = "瞄准锁定（相机）",
+    ["AimLock (Character)"] = "瞄准锁定（角色）",
+    ["Orbit Player"] = "环绕玩家",
+    ["Notify On Death"] = "死亡通知",
+    ["Fling Aura"] = "甩飞光环",
+    ["Click Fling"] = "点击甩飞",
+    ["Fling All (Buggy?)"] = "甩飞所有（有bug？）",
+    ["Touch Fling"] = "触碰甩飞",
+    ["Anti Fling"] = "反甩飞",
+    ["Costum Touch Fling Power"] = "自定义触碰甩飞力量",
+    ["Fling Power Value"] = "甩飞力量值",
+    ["VexonHub Reform"] = "VexonHub改革",
+    ["Member Count"] = "成员数量",
+    ["Online Count"] = "在线数量",
+    ["Update Info"] = "更新信息",
+    ["Copy Discord Invite"] = "复制Discord邀请",
+    ["Discord"] = "Discord",
+    ["Join our discord for more info and stuff"] = "加入我们的Discord获取更多信息和内容",
+    ["Copy Link"] = "复制链接",
+    ["Farm"] = "刷怪",
+    ["TrashCan Kill Farmer"] = "垃圾桶击杀刷怪者",
+    ["Auto Get Emotes"] = "自动获取表情",
+    ["Auto Farm Lowest Health"] = "自动刷最低血量",
+    ["Auto Farm Nearest"] = "自动刷最近目标",
+    ["Auto Give Kills"] = "自动送人头",
+    ["AimLock Cam"] = "瞄准锁定相机",
+    ["AimLock Character"] = "瞄准锁定角色",
+    ["M1 Click Reach"] = "M1点击范围",
+    ["Auto Hit"] = "自动攻击",
+    ["Auto Dodge Players"] = "自动躲避玩家",
+    ["Easy Kill Player panel"] = "简易击杀玩家面板",
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
