@@ -90,20 +90,26 @@ local Window = StellarLibrary:Window({
 local UniversalTab = Window:Tab("通用功能", "rbxassetid://10723407389")
 local BattleTab = Window:Tab("最强战场", "rbxassetid://10723415335") 
 local PlantTab = Window:Tab("植物大战机器人", "rbxassetid://10709782497")
+local SlapTab = Window:Tab("巴掌大战", "rbxassetid://10723407389")
 
-UniversalTab:Button("DYHUB 汉化", function()
+UniversalTab:Button("DYHUB TAX汉化", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/TaxHub/main/DYHUB"))()
 end)
 
-BattleTab:Button("VexonHub 汉化", function()
+BattleTab:Button("VexonHub TAX汉化", function()
     script_key = "TAX_Free"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/TaxHub/main/VexonHub"))()
 end)
 
-BattleTab:Button("phantasm 汉化", function()
+BattleTab:Button("phantasm Kenny汉化", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ke9460394-dot/ugik/refs/heads/main/phantasm.lua"))()
 end)
 
-PlantTab:Button("植物大战机器人 汉化", function()
+PlantTab:Button("植物大战机器人 TAX汉化", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/TaxHub/main/PLAINS%20VS%20BRAINROTS"))()
+end)
+
+SlapTab:Button("CludeHub TAX汉化", function()
+    Custom_key = "TAX_Free"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/TaxHub/refs/heads/main/CludeHub"))()
 end)
