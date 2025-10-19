@@ -82,7 +82,7 @@ if StellarLibrary:LoadAnimation() then
 end;
 local UserInputService = game:GetService("UserInputService")
 local Window = StellarLibrary:Window({
-        SubTitle = "by 诗人",
+        SubTitle = "by TAX",
         Size = game:GetService("UserInputService").TouchEnabled and UDim2.new(0, 500, 0, 350) or UDim2.new(0, 500, 0, 320),
         TabWidth = 140
 })
