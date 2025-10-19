@@ -137,10 +137,15 @@ local Window = StellarLibrary:Window({
         TabWidth = 140
 })
 
+local FlyTab = Window:Tab("通用", "rbxassetid://10723407389")
 local UniversalTab = Window:Tab("部分通用加载器", "rbxassetid://10723407389")
 local BattleTab = Window:Tab("最强战场", "rbxassetid://10723415335") 
 local PlantTab = Window:Tab("植物大战机器人", "rbxassetid://10709782497")
 local SlapTab = Window:Tab("巴掌大战", "rbxassetid://10723407389")
+
+FlyTab:Button("飞行", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/Misc./refs/heads/main/flyv3"))()
+end)
 
 UniversalTab:Button("DYHUB TAX汉化", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tax-Script/TaxHub/main/DYHUB"))()
