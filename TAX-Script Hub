@@ -11,6 +11,44 @@ if not validKeys[userKey] then
     game.Players.LocalPlayer:Kick("卡密错误或已失效, Q群号已复制到剪切板")
     return
 end
+
+local function replaceWTB()
+    local function translateWTB(text)
+        if not text or type(text) ~= "string" then return text end
+        return text:gsub("WTB", "TAX-HUB"):gsub("wtb", "TAX-HUB")
+    end
+
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateWTB(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        game:GetService("CoreGui").DescendantAdded:Connect(function(descendant)
+            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                task.wait(0.5)
+                pcall(function()
+                    local text = descendant.Text
+                    if text and text ~= "" and text:find("WTB") then
+                        descendant.Text = text:gsub("WTB", "TAX-HUB")
+                    end
+                end)
+            end
+        end)
+    end
+end
+
+replaceWTB()
+
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local Lighting = game:GetService("Lighting")
