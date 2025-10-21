@@ -1,0 +1,209 @@
+local Translations = {
+    ["Welcome"] = "欢迎",
+    ["Executor: "] = "执行器: ",
+    ["Premium: "] = "高级版: ",
+    ["Hey!"] = "嘿!",
+    ["We have premium avaliable at a really cheap rate (as low as $1.99) that offers no key system and more features!"] = "我们提供价格实惠的高级版（低至1.99美元），无密钥系统且功能更多！",
+    ["Date"] = "日期",
+    ["Day"] = "天数",
+    ["Last Updated"] = "最后更新",
+    ["Update Log"] = "更新日志",
+    ["Added No Velocity"] = "添加无速度",
+    ["Optimized Script"] = "优化脚本",
+    ["Fixed Spellings"] = "修复拼写",
+    ["Fixed Options"] = "修复选项",
+    ["Farming"] = "刷击杀",
+    ["Auto Farm"] = "自动刷击杀",
+    ["Show Display Names"] = "显示显示名称",
+    ["Select Player"] = "选择玩家",
+    ["Exclude Players"] = "排除玩家",
+    ["Players to exclude from nearest and lowest player."] = "从最近和最低血量玩家中排除的玩家。",
+    ["Back Distance"] = "后退距离",
+    ["How much distance you away from the target"] = "你与目标的距离",
+    ["Height Distance"] = "高度距离",
+    ["How much distance you away from the target (height-based)"] = "你与目标的距离（基于高度）",
+    ["Ultimate Under Health"] = "终极技能血量阈值",
+    ["How much health you should have before you ultimate while farming"] = "刷击杀时使用终极技能前应有多少血量",
+    ["Automatically Block"] = "自动格挡",
+    ["Ignore Forcefield"] = "忽略力场",
+    ["Automation"] = "自动化",
+    ["Auto ToxicRespond"] = "自动毒舌回复",
+    ["Automatically responds to toxic messages with toxic messages"] = "自动用毒舌消息回复毒舌消息",
+    ["Auto Activate Ultimate"] = "自动激活终极技能",
+    ["Auto Activate Ultimate HP:"] = "自动激活终极技能血量:",
+    ["How much health you should have before you automatically activate your ultimate"] = "自动激活终极技能前应有多少血量",
+    ["Auto Safe Zone"] = "自动安全区",
+    ["Safe Zone When Table Flip, Death Counter"] = "桌翻、死亡计数时安全区",
+    ["Auto Safe Zone HP:"] = "自动安全区血量:",
+    ["How much health you should have before you get teleported to the safe zone"] = "传送到安全区前应有多少血量",
+    ["On Staff Joined"] = "管理员加入时",
+    ["Auto Hit"] = "自动攻击",
+    ["Auto Block"] = "自动格挡",
+    ["Auto Counter"] = "自动反击",
+    ["Auto Dash"] = "自动冲刺",
+    ["Auto Ability Enabled"] = "自动技能启用",
+    ["Auto Ability One"] = "自动技能一",
+    ["Auto Abilitv Two"] = "自动技能二",
+    ["Player"] = "玩家",
+    ["No Clip"] = "无碰撞",
+    ["Infinite Health Distance"] = "无限血量距离",
+    ["Allows you to see player's healths from anywhere"] = "允许你从任何地方查看玩家血量",
+    ["InfiniteZoom"] = "无限缩放",
+    ["No Combo Stun"] = "无连招眩晕",
+    ["No Freeze"] = "无冻结",
+    ["No Slow"] = "无减速",
+    ["No Ragdoll"] = "无布娃娃",
+    ["No Velocity"] = "无速度",
+    ["Boost FPS"] = "提升FPS",
+    ["Disable Effects"] = "禁用特效",
+    ["Disable Benchs"] = "禁用长椅",
+    ["Disable Trashcans"] = "禁用垃圾桶",
+    ["Disable Trees"] = "禁用树木",
+    ["Teleportation"] = "传送",
+    ["Teleportto Player"] = "传送到玩家",
+    ["Select Location"] = "选择位置",
+    ["Goto Selected Location"] = "前往选定位置",
+    ["Location Name"] = "位置名称",
+    ["Add Save Location"] = "添加保存位置",
+    ["Erase Saved Locations"] = "删除保存的位置",
+    ["Copy Locations as JSON"] = "复制位置为JSON",
+    ["Import Locations"] = "导入位置",
+    ["the strongest battleground"] = "最强战场",
+    ["Visuals"] = "视觉",
+    ["Utilities"] = "实用工具",
+    ["Void"] = "虚空",
+    ["Webhook"] = "Webhook",
+    ["Lock On Key"] = "锁定按键",
+    ["nicuse.xyz"] = "汉化制作 TAX",
+    ["Infinite Jump"] = "无限跳跃",
+    ["Walkspeed Enabled"] = "移动速度启用",
+    ["Walkspeed Amount"] = "移动速度数值",
+    ["Play Animation"] = "播放动画",
+    ["Panic"] = "紧急关闭",
+    ["Disable all features"] = "禁用所有功能",
+    ["No Reset Cooldown"] = "无重置冷却",
+    ["Auto Claim Emote"] = "自动领取表情",
+    ["Auto Collect Frozen Soul"] = "自动收集冰冻灵魂",
+    ["Announce Death Counter"] = "死亡计数提示",
+    ["Fake Ultimate"] = "假终极技能",
+    ["Plays the ultimate animation"] = "播放终极技能动画",
+    ["Lock On Enabled"] = "锁定启用",
+    ["Leave"] = "离开",
+    ["Notify"] = "通知",
+    ["Do Nothing"] = "什么都不做",
+    ["Auto Ability Two"] = "自动技能二",
+    ["Auto Ability Three"] = "自动技能三",
+    ["Auto Ability Four"] = "自动技能四"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://loader.nicuse.xyz"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
