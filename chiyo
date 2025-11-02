@@ -152,7 +152,13 @@ local Translations = {
     ["Current autoload config"] = "当前自动加载配置",
     ["Export config"] = "导出配置",
     ["Paste config here"] = "在此处粘贴配置",
-    ["Import config"] = "导入配置"
+    ["Import config"] = "导入配置",
+    ["FARM"] = "农场",
+    ["LOBBY"] = "大厅",
+    ["CRAFTING"] = "制作", 
+    ["WEBHOOKS"] = "网络钩子",
+    ["SETTINGS"] = "设置",
+    ["Hunty Zombies - v4.8"] = "by TAX"
 }
 
 local function translateText(text)
