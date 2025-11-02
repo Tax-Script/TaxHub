@@ -1,0 +1,54 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local lp = Players.LocalPlayer
+local character = lp.Character
+local hrp = character.HumanoidRootPart
+local originalPosition = hrp.CFrame
+
+for _, player in ipairs(Players:GetPlayers()) do
+    if player ~= lp and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        local targetHrp = player.Character.HumanoidRootPart
+        local trackConnection
+        local trackTime = 0
+        
+        trackConnection = RunService.Heartbeat:Connect(function(deltaTime)
+            trackTime = trackTime + deltaTime
+            if trackTime < 1.5 then
+                local basePosition = targetHrp.CFrame + Vector3.new(0, 3, 0)
+                local shakeOffset = Vector3.new(
+                    math.random(-3, 3),
+                    math.random(-2, 2),
+                    math.random(-3, 3)
+                )
+                hrp.CFrame = basePosition + shakeOffset
+                
+                hrp.Velocity = Vector3.new(
+                    math.random(-15000, 15000),
+                    math.random(-8000, 8000),
+                    math.random(-15000, 15000)
+                )
+            else
+                trackConnection:Disconnect()
+            end
+        end)
+        
+        wait(0.5)
+        targetHrp.Velocity = Vector3.new(
+            math.random(-20000, 20000),
+            25000,
+            math.random(-20000, 20000)
+        )
+        
+        wait(1)
+        if trackConnection then
+            trackConnection:Disconnect()
+        end
+    end
+end
+
+-- 先停止所有速度
+hrp.Velocity = Vector3.new(0, 0, 0)
+wait(0.1)
+
+-- 再传送回原位
+hrp.CFrame = originalPosition
