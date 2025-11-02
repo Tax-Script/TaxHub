@@ -1,0 +1,256 @@
+local Translations = {
+    ["Main"] = "主界面",
+    ["Enable Auto Farm"] = "启用自动农场",
+    ["Endless Mode Delay"] = "无尽模式延迟",
+    ["Auto Replay"] = "自动重玩",
+    ["Stuck Detector"] = "卡住检测器",
+    ["Stuck Time Limit"] = "卡住时间限制",
+    ["Targeting"] = "目标选择",
+    ["Prioritize Bosses"] = "优先攻击BOSS",
+    ["Prioritize Other Zombies"] = "优先攻击其他僵尸",
+    ["Movement"] = "移动设置",
+    ["Teleport Distance"] = "传送距离",
+    ["Teleport Position"] = "传送位置",
+    ["On Top"] = "上方",
+    ["Auto Dodge TNT"] = "自动躲避TNT",
+    ["Auto Dodge Raid Boss"] = "自动躲避突袭BOSS",
+    ["Combat"] = "战斗设置",
+    ["Auto Attack"] = "自动攻击",
+    ["Auto Use Perk"] = "自动使用技能",
+    ["Pause Farm for Raid Perk"] = "为突袭技能暂停农场",
+    ["Auto Use Ultimate"] = "自动使用终极技能",
+    ["Ultimate on Bosses Only"] = "仅对BOSS使用终极技能",
+    ["Auto Use Abilities"] = "自动使用能力",
+    ["Abilities to Use"] = "要使用的能力",
+    ["Map"] = "地图设置",
+    ["Auto Complete Objectives"] = "自动完成目标",
+    ["Auto Open Doors"] = "自动开门",
+    ["Auto Open Door Delay"] = "自动开门延迟",
+    ["Auto Skip School"] = "自动跳过学校",
+    ["Auto Collect Items"] = "自动收集物品",
+    ["Carnival Clown Delay"] = "嘉年华小丑延迟",
+    ["Weapon"] = "武器",
+    ["Auto Select Weapon"] = "自动选择武器",
+    ["Weapon to Equip"] = "要装备的武器",
+    ["Anchor"] = "锚",
+    ["Axes"] = "斧头",
+    ["Baseball"] = "棒球棒",
+    ["Bow"] = "弓",
+    ["Daggers"] = "匕首",
+    ["Dual Gun"] = "双枪",
+    ["Ghost"] = "幽灵",
+    ["Greatsword"] = "巨剑",
+    ["Guitar"] = "吉他",
+    ["Halloween Sword"] = "万圣节剑",
+    ["Katana"] = "武士刀",
+    ["Priest"] = "牧师",
+    ["Pure Hand"] = "纯净之手",
+    ["Reapers Scythe"] = "死神镰刀",
+    ["Scissors"] = "剪刀",
+    ["Scythe"] = "镰刀",
+    ["Shoes"] = "鞋子",
+    ["Spinal Blade"] = "脊柱刃",
+    ["ZombieClaws"] = "僵尸爪",
+    ["Auto Weapon Switch"] = "自动切换武器",
+    ["Switch Interval"] = "切换间隔",
+    ["Equip Any Weapon"] = "装备任意武器",
+    ["Weapon Slot"] = "武器槽位",
+    ["Slot 1"] = "槽位1",
+    ["Equip Now"] = "立即装备",
+    ["Miscellaneous"] = "杂项设置",
+    ["Hop To Lobby on Player Join"] = "玩家加入时跳转大厅",
+    ["Rejoin Lobby on Death"] = "死亡时重新加入大厅",
+    ["Toggle FPS Boost"] = "切换FPS提升",
+    ["Remove Perk Effects"] = "移除技能效果",
+    ["Disable Rendering"] = "禁用渲染",
+    ["Teleport Delay"] = "传送延迟",
+    ["Copy Discord Server Link"] = "复制Discord服务器链接",
+    ["Auto Queue Match"] = "自动排队匹配",
+    ["Mode"] = "模式",
+    ["Raid"] = "突袭",
+    ["Carnival"] = "嘉年华",
+    ["Difficulty"] = "难度",
+    ["Normal"] = "普通",
+    ["Player Size"] = "玩家数量",
+    ["Friends Only"] = "仅好友",
+    ["Start Auto Queue"] = "开始自动排队",
+    ["Auto Roll Weapon"] = "自动滚动武器",
+    ["Weapon to roll for"] = "要滚动的武器",
+    ["Spin Method"] = "滚动方式",
+    ["Slot to use"] = "使用的槽位",
+    ["Start Rolling"] = "开始滚动",
+    ["Auto Roll Perk"] = "自动滚动技能",
+    ["Perk to roll for"] = "要滚动的技能",
+    ["Adrenaline"] = "肾上腺素",
+    ["Auto Roll Set"] = "自动滚动套装",
+    ["Pet to roll for"] = "要滚动的宠物",
+    ["Bat"] = "蝙蝠",
+    ["Auto Train Recoll"] = "自动训练重铸",
+    ["Trait to roll for"] = "要滚动的特性",
+    ["Agility I"] = "敏捷 I",
+    ["Start Recolling"] = "开始重铸",
+    ["Codes"] = "代码",
+    ["Claim All Codes"] = "领取所有代码",
+    ["Auto Claim"] = "自动领取",
+    ["Auto Claim Quests"] = "自动领取任务奖励",
+    ["Auto Claim Daily Reward"] = "自动领取每日奖励",
+    ["Auto Claim Achievements"] = "自动领取成就",
+    ["Auto Claim Battlepass"] = "自动领取战斗通行证",
+    ["Pet Pack to buy"] = "购买的宠物包",
+    ["legend"] = "传说",
+    ["Auto Roll Weapon Effect"] = "自动滚动武器效果",
+    ["Effect to roll for"] = "要滚动的效果",
+    ["Cloth"] = "布料",
+    ["For Weapon"] = "对于武器",
+    ["Any Weapon"] = "任意武器",
+    ["Auto Roll Emote"] = "自动滚动表情",
+    ["Emote to roll for"] = "要滚动的表情",
+    ["777"] = "777",
+    ["Emote Pack"] = "表情包",
+    ["Auto Roll Passive"] = "自动滚动被动",
+    ["Passive to roll for"] = "要滚动的被动",
+    ["AP"] = "AP",
+    ["Passive Pack to buy"] = "购买的被动包",
+    ["Auto Craft"] = "自动制作",
+    ["Item to Craft"] = "要制作的物品",
+    ["ClownNose"] = "小丑鼻子",
+    ["Craft Selected Item Once"] = "制作选定物品一次",
+    ["Auto Craft Continuously"] = "自动连续制作",
+    ["Recipe Info"] = "配方信息",
+    ["Tier"] = "等级",
+    ["Legendary"] = "传说",
+    ["Cost"] = "花费",
+    ["Coins"] = "金币",
+    ["Materials Needed"] = "所需材料",
+    ["Pen"] = "笔",
+    ["Glass"] = "玻璃",
+    ["Nut"] = "螺母",
+    ["Bear"] = "熊",
+    ["Webhook Configuration"] = "Webhook配置",
+    ["Session Stats Tracker"] = "会话统计跟踪器",
+    ["Discord Webhook URL"] = "Discord Webhook URL",
+    ["Enable Session Tracking"] = "启用会话跟踪",
+    ["Start / Restart Session"] = "开始/重启会话",
+    ["Send Webhook on Level Clear"] = "关卡完成时发送Webhook",
+    ["Reset Session Data"] = "重置会话数据",
+    ["Send Stats on Lobby Join"] = "加入大厅时发送统计",
+    ["Mention Everyone"] = "提及所有人",
+    ["Elapsed Time"] = "经过时间",
+    ["Send Test Webhook"] = "发送测试Webhook",
+    ["Total Coins"] = "总金币",
+    ["Total Drops"] = "总掉落",
+    ["Configuration"] = "配置",
+    ["Config name"] = "配置名称",
+    ["Create config"] = "创建配置",
+    ["Config list"] = "配置列表",
+    ["Load config"] = "加载配置",
+    ["Overwrite config"] = "覆盖配置",
+    ["Delete config"] = "删除配置",
+    ["Refresh list"] = "刷新列表",
+    ["Set as autoload"] = "设为自动加载",
+    ["Reset autoload"] = "重置自动加载",
+    ["Current autoload config"] = "当前自动加载配置",
+    ["Export config"] = "导出配置",
+    ["Paste config here"] = "在此处粘贴配置",
+    ["Import config"] = "导入配置"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then
+        return Translations[text]
+    end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        setreadonly(getrawmetatable(game), true)
+    end)
+    if not success then
+        warn("元表劫持失败:", err)
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+setupTranslationEngine()
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
