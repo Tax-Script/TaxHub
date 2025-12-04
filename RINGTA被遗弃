@@ -163,7 +163,18 @@ local Translations = {
     ["Message"] = "消息",
     ["Send"] = "发送",
     ["Server Tools"] = "服务器工具",
-    ["Server Hop (P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)"] = "服务器跳转(P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)"
+    ["Server Hop (P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)"] = "服务器跳转(P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)",
+    ["Stamina_Settings"] = "耐力设置",
+    ["Esp"] = "透视",
+    ["Auto Block"] = "自动格挡",
+    ["Misc"] = "杂项",
+    ["Auto_Stun"] = "自动击晕",
+    ["Random"] = "随机",
+    ["Hitbox_expander"] = "攻击判定框扩展",
+    ["Generator"] = "生成器",
+    ["Teleport"] = "传送",
+    ["Settings"] = "设置",
+    ["Credits"] = "制作人员名单/积分",
 }
 
 local function translateText(text)
