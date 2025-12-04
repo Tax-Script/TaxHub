@@ -1,0 +1,268 @@
+local Translations = {
+    ["Visual Settings"] = "视觉设置",
+    ["Fullbright"] = "全亮",
+    ["Anti Fog"] = "去雾",
+    ["Chat & UI"] = "聊天界面",
+    ["Chat Visibility"] = "聊天可见性",
+    ["Remove Effects"] = "移除效果",
+    ["Anti Stun"] = "防眩晕",
+    ["Auto Block (Animation)"] = "自动格挡(动画)",
+    ["Detection Range"] = "检测范围",
+    ["Windup %"] = "蓄力%",
+    ["Load Auto Block (Audio)"] = "加载自动格挡(音效)",
+    ["Other Useful Stuff"] = "其他实用功能",
+    ["Auto Clone"] = "自动克隆",
+    ["Auto Clone (007n7)"] = "自动克隆(007n7)",
+    ["Infinite Stamina"] = "无限体力",
+    ["Max Stamina"] = "最大体力",
+    ["Minimum Stamina"] = "最小体力",
+    ["Sprint Speed"] = "冲刺速度",
+    ["Stamina Gain"] = "体力恢复",
+    ["Stamina Drain"] = "体力消耗",
+    ["Regen Delay"] = "恢复延迟",
+    ["Auto Punch"] = "自动攻击",
+    ["Punch Mode"] = "攻击模式",
+    ["Aim Mode"] = "瞄准模式",
+    ["Fling Power"] = "击飞力量",
+    ["Prediction Time"] = "预测时间",
+    ["Free Block (Use with invisibility and auto block, may not work always)"] = "自由格挡(与隐身和自动格挡一起使用，可能不总是有效)",
+    ["Double Hitbox Blocking tech (Don't use with auto Block)"] = "双碰撞箱格挡技术(不要与自动格挡一起使用)",
+    ["Detection Radius"] = "检测半径",
+    ["Detection Angle"] = "检测角度",
+    ["Angle Visualization"] = "角度可视化",
+    ["MS Checker"] = "毫秒检测器",
+    ["Special"] = "特殊功能",
+    ["Invisibility (R6 Only)"] = "隐身(R6限定)",
+    ["Auto Close Popups"] = "自动关闭弹窗",
+    ["Auto Close 1x1x1x1 Popups"] = "自动关闭1x1x1x1弹窗",
+    ["Godmod"] = "上帝模式",
+    ["Toggle"] = "切换",
+    ["BE VERY CAREFUL WHILE USE IT. U CAN GET EASILY BANNED IF SOMEONE REPORTS YOU (u may Can use it with invisibility for better experience and also be careful u can fling killers As hell (also makes you invisible to avoid Reports)"] = "使用时请非常小心。如果有人举报你，你很容易被封禁(可以与隐身一起使用以获得更好体验，也要小心你会疯狂击飞杀手(也会让你隐身以避免举报))",
+    ["Noil Abilities"] = "无油能力",
+    ["Void Rush No-Crash"] = "虚空冲刺防崩溃",
+    ["Void Rush Full Control"] = "虚空冲刺完全控制",
+    ["ESP Mode"] = "ESP模式",
+    ["ESP Killer"] = "ESP杀手",
+    ["ESP Survivors"] = "ESP幸存者",
+    ["ESP Medkit"] = "ESP医疗包",
+    ["ESP BloxyCola"] = "ESP Bloxy可乐",
+    ["ESP Generators"] = "ESP发电机",
+    ["ESP Sentry/Dispenser"] = "ESP哨兵/补给器",
+    ["ESP Candy"] = "ESP糖果",
+    ["ESP Veeronica Graffiti"] = "ESP Veeronica涂鸦",
+    ["ESP John Doe Digital Footprint"] = "ESP John Doe数字足迹",
+    ["Elliot"] = "Elliot",
+    ["Auto Eat Pizza"] = "自动吃披萨",
+    ["Pizza HP Threshold"] = "披萨血量阈值",
+    ["Auto Heal Teammates"] = "自动治疗队友",
+    ["Teammates HP Threshold"] = "队友血量阈值",
+    ["Hitbox Visualization"] = "碰撞箱可视化",
+    ["Auto Invisibility"] = "自动隐身",
+    ["Auto Invisibility when Clone (007n7)"] = "克隆时自动隐身(007n7)",
+    ["Auto Invisibility when Crouch (Two Time)"] = "蹲下时自动隐身(Two Time)",
+    ["Auto Invisibility when Ghostburger (Noob)"] = "幽灵汉堡时自动隐身(Noob)",
+    ["Invisibility Duration"] = "隐身持续时间",
+    ["Silent Aim"] = "静默瞄准",
+    ["Silent Aim (c00lkid/Dusekkar)"] = "静默瞄准(c00lkid/Dusekkar)",
+    ["Auto Stun"] = "自动眩晕",
+    ["Auto Stun Killer (Chance)"] = "自动眩晕杀手(Chance)",
+    ["Chance Aimbot"] = "Chance瞄准",
+    ["Auto Parry"] = "自动招架",
+    ["Backstab"] = "背刺",
+    ["Veeronica"] = "Veeronica",
+    ["Trick Helper"] = "技巧助手",
+    ["Help Every"] = "帮助所有",
+    ["Super Fling with Bumber"] = "使用Bumber超级击飞",
+    ["Pitch Degrees"] = "俯仰角度",
+    ["Activation Range"] = "激活范围",
+    ["Auto Trick"] = "自动技巧",
+    ["Sk8 Control"] = "滑板控制",
+    ["Chance Aimbot"] = "Chance瞄准",
+    ["Sharpness (high ping = > 4)"] = "锐度(高延迟 = > 4)",
+    ["Mode"] = "模式",
+    ["Detection Radius"] = "检测半径",
+    ["Backstab (Two Time)"] = "背刺(Two Time)",
+    ["Backstab Range"] = "背刺范围",
+    ["Backstab Mode"] = "背刺模式",
+    ["Anti Sentry"] = "反哨兵",
+    ["John Doe Protection"] = "John Doe保护",
+    ["Guest Skin"] = "访客皮肤",
+    ["Fling"] = "击飞",
+    ["Aimbot Settings"] = "瞄准设置",
+    ["Sukkars"] = "Sukkars",
+    ["Orbit"] = "环绕",
+    ["Speed Boost"] = "速度提升",
+    ["Kill Aura"] = "击杀光环",
+    ["Hide Names"] = "隐藏名字",
+    ["Guest Animations"] = "访客动画",
+    ["Custom LMS Music"] = "自定义LMS音乐",
+    ["Stamina Checker"] = "体力检查器",
+    ["Show Fling UI"] = "显示击飞界面",
+    ["Wall Check (Ignore behind walls)"] = "墙壁检查(忽略墙后目标)",
+    ["Aimbot Target"] = "瞄准目标",
+    ["Aimbot Mode"] = "瞄准模式",
+    ["Smoothness"] = "平滑度",
+    ["KeyBind (PC)"] = "按键绑定(PC)",
+    ["GUI Button (Mobile)"] = "GUI按钮(移动端)",
+    ["Enable Aimbot"] = "启用瞄准",
+    ["Get Sukkars"] = "获取Sukkars",
+    ["Orbit Players (u can use on killer so he can't Hit you with Invisibility)"] = "环绕玩家(可对杀手使用使其无法用隐身击中你)",
+    ["Choose the player"] = "选择玩家",
+    ["Rotation Speed"] = "旋转速度",
+    ["Orbit Distance"] = "环绕距离",
+    ["Speed Boost (Like Eliot's Rush Hour)"] = "速度提升(类似Eliot的Rush Hour)",
+    ["Backstab Type"] = "背刺类型",
+    ["AimBot for legit mode"] = "合法模式瞄准",
+    ["Custom LMS"] = "自定义LMS",
+    ["Anti Sentry (Doesn't work on Taph)"] = "反哨兵(对Taph无效)",
+    ["Auto Delete John Doe Spikes"] = "自动删除John Doe尖刺",
+    ["Delete John Doe Trail"] = "删除John Doe轨迹",
+    ["Random Skin For Guest"] = "访客随机皮肤",
+    ["Tp to Killer"] = "传送到杀手",
+    ["Tp to Survivor"] = "传送到幸存者",
+    ["Tp to Generator"] = "传送到发电机",
+    ["Tp to Medkit"] = "传送到医疗包",
+    ["Tp to BloxyCola"] = "传送到Bloxy可乐",
+    ["Hitbox Expander"] = "碰撞箱扩展器",
+    ["Reach (New one)"] = "范围(新版)",
+    ["Hitbox Increase"] = "碰撞箱增加",
+    ["Punch Hitbox Expander"] = "攻击碰撞箱扩展器",
+    ["Punch Hitbox Increase"] = "攻击碰撞箱增加",
+    ["Increase (Don't make too high 45 is good Enough)"] = "增加量(不要太高，45就足够)",
+    ["Kill Aura (Killer)"] = "击杀光环(杀手)",
+    ["Fake Animations for Guest"] = "访客假动画",
+    ["Ready Songs"] = "准备歌曲",
+    ["Music ID (Numbers Only)"] = "音乐ID(仅数字)",
+    ["Music Volume"] = "音乐音量",
+    ["Manual Fix"] = "手动修复",
+    ["Fix generator manual (Press UI button or KeyBind)"] = "修复发电机手动(按UI按钮或按键绑定)",
+    ["Auto Fix"] = "自动修复",
+    ["Auto Fix Generators"] = "自动修复发电机",
+    ["Auto Complete Generator Mini game (press 1 time)"] = "自动完成发电机小游戏(按1次)",
+    ["Veeronica Sk8 Farm"] = "Veeronica滑板农场",
+    ["How to use"] = "使用方法",
+    ["Use Sk8 ability first, then press Start Farm. For better quality use with inf stamina, Auto Trick and Sk8 Control. Can also be used for battery charging. Press Stop Farm when done. Find an angle where you won’t be damaged."] = "先使用Sk8能力，然后按开始农场。为获得更好效果，与无限体力、自动技巧和滑板控制一起使用。也可用于电池充电。完成后按停止农场。找一个你不会受伤的角度。",
+    ["Start Farm"] = "开始农场",
+    ["Stop Farm"] = "停止农场",
+    ["AI Play"] = "AI游戏",
+    ["Show AI GUI"] = "显示AI界面",
+    ["AI Mode"] = "AI模式",
+    ["Dangerous Proximity"] = "危险接近",
+    ["Disengage Distance"] = "脱离距离",
+    ["Engage Distance"] = "接触距离",
+    ["JOIN DISCORD SERVER RINGTA"] = "加入RINGTA DISCORD服务器",
+    ["JOIN DISCORD SERVER NULLSAKEN"] = "加入NULLSAKEN DISCORD服务器",
+    ["Announcement"] = "公告",
+    ["Thanks Ringta For Luraph And help Join Their server for OP scripts!!"] = "感谢Ringta的Luraph和帮助加入他们的服务器获取OP脚本!!",
+    ["Set Toggle Key(Close open ui for pc)"] = "设置切换键(PC关闭打开UI)",
+    ["Config Name"] = "配置名称",
+    ["Save Config"] = "保存配置",
+    ["Select Config"] = "选择配置",
+    ["Load Config"] = "加载配置",
+    ["Suggestions for script"] = "脚本建议",
+    ["Message"] = "消息",
+    ["Send"] = "发送",
+    ["Server Tools"] = "服务器工具",
+    ["Server Hop (P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)"] = "服务器跳转(P\\PjPµPSPёC, Cth Cf^pµC5PIPµC5)"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then return Translations[text] end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then return text:gsub(en, cn) end
+    end
+    return text
+end
+
+local translatedElements = {}
+local originalTexts = {}
+
+local function safeTranslateElement(element)
+    if translatedElements[element] then return end
+    
+    pcall(function()
+        if element:IsA("TextLabel") or element:IsA("TextButton") or element:IsA("TextBox") then
+            local currentText = element.Text
+            if currentText and currentText ~= "" then
+                if not originalTexts[element] then
+                    originalTexts[element] = currentText
+                end
+                
+                local translatedText = translateText(currentText)
+                if translatedText ~= currentText then
+                    element.Text = translatedText
+                    translatedElements[element] = true
+                end
+            end
+        end
+    end)
+end
+
+local function setupSmartListener()
+    local function onTextPropertyChanged(element)
+        if translatedElements[element] then
+            local currentText = element.Text
+            local originalText = originalTexts[element]
+            
+            if currentText == originalText or translateText(currentText) == currentText then
+                translatedElements[element] = nil
+                return
+            end
+            
+            local translatedText = translateText(currentText)
+            if translatedText ~= currentText then
+                element.Text = translatedText
+            end
+        else
+            safeTranslateElement(element)
+        end
+    end
+
+    local function addSmartListener(parent)
+        parent.DescendantAdded:Connect(function(descendant)
+            task.wait(0.3)
+            safeTranslateElement(descendant)
+            
+            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                descendant:GetPropertyChangedSignal("Text"):Connect(function()
+                    task.wait(0.1)
+                    onTextPropertyChanged(descendant)
+                end)
+            end
+        end)
+    end
+    
+    pcall(addSmartListener, game:GetService("CoreGui"))
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        pcall(addSmartListener, player.PlayerGui)
+    end
+end
+
+local function delayedInitialTranslate()
+    task.wait(5)
+    
+    for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+        safeTranslateElement(gui)
+    end
+    
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+            safeTranslateElement(gui)
+        end
+    end
+end
+
+task.wait(2)
+setupSmartListener()
+delayedInitialTranslate()
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/34f3f/forsaken.github.io/refs/heads/main/ringtabublik.lua"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
