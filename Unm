@@ -1,0 +1,180 @@
+local Translations = {
+    ["Teleport to End"] = "传送到终点",
+    ["Remove Injury"] = "移除受伤状态",
+    ["Auto Collect Bandage (detected)"] = "自动收集绷带（已被检测）",
+    ["Glass Bridge"] = "玻璃桥",
+    ["Halloween"] = "万圣节",
+    ["Guards"] = "守卫",
+    ["Others"] = "其他",
+    ["Rebel"] = "反叛",
+    ["Red Light"] = "红灯绿灯",
+    ["Dalgona & lights"] = "糖饼和熄灯",
+    ["Hide & Seek"] = "捉迷藏",
+    ["Tug of War"] = "拔河",
+    ["Jump Rope"] = "跳绳",
+    ["ESP Players"] = "透视玩家",
+    ["Key ESP"] = "钥匙透视",
+    ["ESP Exit Doors"] = "透视出口门",
+    ["Free Lighter"] = "免费打火机",
+    ["Auto Dalgona"] = "自动抠糖饼",
+    ["Safe place on Low Health"] = "低血量安全位置",
+    ["Auto Kill Hiders"] = "自动击杀躲藏者",
+    ["Auto Escape"] = "自动逃脱",
+    ["Delete Spike"] = "删除尖刺",
+    ["Spike Kill"] = "尖刺击杀",
+    ["Auto Dodge"] = "自动闪避",
+    ["Anti Hit"] = "防击中",
+    ["Delete Rope"] = "删除绳子",
+    ["Anti Fall (Jump Rope)"] = "防坠落（跳绳）",
+    ["Auto Pull"] = "自动拉绳",
+    ["Anti Miss"] = "防失误",
+    ["Anti Timer Damage"] = "防出范围伤害",
+    ["Auto Kill"] = "自动击杀",
+    ["Anti Fall"] = "防坠落",
+    ["Auto Start"] = "自动按开始按钮",
+    ["Auto Grab Pole"] = "自动抓钢管",
+    ["Start"] = "开始",
+    ["Anti Break"] = "防破碎",
+    ["Glass ESP"] = "玻璃透视",
+    ["Anti Fall (Glass Bridge)"] = "防坠落（玻璃桥）",
+    ["Candy ESP"] = "糖果透视",
+    ["Door ESP"] = "门透视",
+    ["Auto Collect Candy"] = "自动收集糖果",
+    ["Instant Interact"] = "即时交互",
+    ["Aimbot Guards"] = "守卫自瞄",
+    ["ESP Guards"] = "守卫透视",
+    ["Infinite Ammo"] = "无限弹药",
+    ["Rapid Fire"] = "快速射击",
+    ["Instant Rebel"] = "反叛即时杀守卫",
+    ["Auto Enroll Guards"] = "自动抢守卫",
+    ["Infinite Won"] = "刷钱",
+    ["Always Headshot"] = "永远爆头",
+    ["Unlock Dash"] = "解锁冲刺",
+    ["Parkour Artist"] = "跑酷大师",
+    ["Revive"] = "复活",
+    ["Auto QTE V2"] = "自动QTE V2",
+    ["Faster Speed"] = "更快速度",
+    ["AntiLag"] = "防卡顿",
+    ["Touch Fling"] = "触碰甩飞",
+    ["Final"] = "天空/鱿鱼游戏",
+    ["Freeze Rope"] = "冻结绳子",
+    ["Auto Jump"] = "自动跳跃",
+    ["Fov Booster"] = "视野增强",
+    ["Phantom Step"] = "幽灵步",
+    ["Shoot Marked Players"] = "射击被标记的玩家",
+    ["Shoot Marked Players v2"] = "射击被标记的玩家 v2",
+    ["Auto Balance"] = "自动平衡",
+    ["Anti Banana"] = "防香蕉",
+    ["Gravity"] = "重力",
+    ["Anti Fling"] = "防甩飞",
+    ["Anti Stun"] = "防眩晕",
+    ["Jump Power"] = "跳跃力量",
+    ["Anti AFK"] = "防挂机",
+    ["Walk Speed"] = "速度",
+    ["Other Modifications"] = "其他修改",
+    ["Player Modifier"] = "玩家修改",
+    ["Fire Rate Multiplier"] = "倍数",
+    ["Anti-Fall (Walls)"] = "防坠落（墙）",
+    ["Main"] = "主菜单",
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then return Translations[text] end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then return text:gsub(en, cn) end
+    end
+    return text
+end
+
+local translatedElements = {}
+local originalTexts = {}
+
+local function safeTranslateElement(element)
+    if translatedElements[element] then return end
+    
+    pcall(function()
+        if element:IsA("TextLabel") or element:IsA("TextButton") or element:IsA("TextBox") then
+            local currentText = element.Text
+            if currentText and currentText ~= "" then
+                if not originalTexts[element] then
+                    originalTexts[element] = currentText
+                end
+                
+                local translatedText = translateText(currentText)
+                if translatedText ~= currentText then
+                    element.Text = translatedText
+                    translatedElements[element] = true
+                end
+            end
+        end
+    end)
+end
+
+local function setupSmartListener()
+    local function onTextPropertyChanged(element)
+        if translatedElements[element] then
+            local currentText = element.Text
+            local originalText = originalTexts[element]
+            
+            if currentText == originalText or translateText(currentText) == currentText then
+                translatedElements[element] = nil
+                return
+            end
+            
+            local translatedText = translateText(currentText)
+            if translatedText ~= currentText then
+                element.Text = translatedText
+            end
+        else
+            safeTranslateElement(element)
+        end
+    end
+
+    local function addSmartListener(parent)
+        parent.DescendantAdded:Connect(function(descendant)
+            task.wait(0.3)
+            safeTranslateElement(descendant)
+            
+            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                descendant:GetPropertyChangedSignal("Text"):Connect(function()
+                    task.wait(0.1)
+                    onTextPropertyChanged(descendant)
+                end)
+            end
+        end)
+    end
+    
+    pcall(addSmartListener, game:GetService("CoreGui"))
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        pcall(addSmartListener, player.PlayerGui)
+    end
+end
+
+local function delayedInitialTranslate()
+    task.wait(5)
+    
+    for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+        safeTranslateElement(gui)
+    end
+    
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+            safeTranslateElement(gui)
+        end
+    end
+end
+
+task.wait(2)
+setupSmartListener()
+delayedInitialTranslate()
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scrintisnotfun/InkGames/refs/heads/main/NewLoader.lua"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
