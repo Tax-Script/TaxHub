@@ -1,0 +1,249 @@
+local Translations = {
+    ["Bomber"] = "炸弹人",
+    ["(Lower = Higher Priority)"] = "(越低优先级越高)",
+    ["Brute Zombie"] = "野蛮僵尸",
+    ["Deathaxe Skeleton"] = "死亡斧骷髅",
+    ["Delver Zombie"] = "挖掘僵尸",
+    ["Elite Deathaxe Skeleton"] = "精英死亡斧骷髅",
+    ["Elite Rogue Skeleton"] = "精英盗贼骷髅",
+    ["EliteZombie"] = "精英僵尸",
+    ["Farming Configuration"] = "挖矿配置",
+    ["Farm Areas"] = "挖矿区域",
+    ["Select multiple farming areas"] = "选择多个挖矿区域",
+    ["Rock Select"] = "石头选择",
+    ["Select Rock to farm (empty = farm all Rock). Priority still applies."] = "选择要挖的石头(空=挖所有石头)。优先级仍然适用。",
+    ["Ore Filter"] = "矿石过滤",
+    ["Filter rocks by ore type (empty = no filter). Checks ore in rock."] = "按矿石类型过滤石头(空=不过滤)。检查石头中的矿石。",
+    ["Auto Farm"] = "自动挖矿",
+    ["Automatically mine rocks in selected areas"] = "自动挖掘选定区域中的石头",
+    ["Auto Kill Mob"] = "自动杀怪",
+    ["Automatically kill mobs near rock while farming"] = "挖矿时自动杀死石头附近的怪物",
+    ["Detect Area"] = "检测区域",
+    ["Show detect area visualization at current mining location"] = "在当前挖矿位置显示检测区域可视化",
+    ["Lucky Block"] = "幸运方块",
+    ["Pebble"] = "鹅卵石",
+    ["Rock"] = "石头",
+    ["Violet Crystal"] = "紫水晶",
+    ["Volcanic Rock"] = "火山岩",
+    ["MINING"] = "挖矿",
+    ["COMBAT"] = "战斗",
+    ["ESP"] = "ESP",
+    ["Auto Sell"] = "自动出售",
+    ["AutoPotion"] = "自动药水",
+    ["FORGE"] = "锻造",
+    ["Settings"] = "设置",
+    ["UTILITIES"] = "工具",
+    ["Basalt Vein"] = "玄武岩脉",
+    ["Boulder"] = "巨石",
+    ["Crimson Crystal"] = "深红水晶",
+    ["Cyan Crystal"] = "青色水晶",
+    ["Earth Crystal"] = "土晶",
+    ["Lava Rock"] = "熔岩石",
+    ["Light Crystal"] = "光晶",
+    ["Automatically kill mobs based on priority"] = "根据优先级自动杀怪",
+    ["Mob Priorities"] = "怪物优先级",
+    ["Zombie3"] = "僵尸3",
+    ["Axe Skeleton"] = "斧骷髅",
+    ["Blazing Slime"] = "炽热史莱姆",
+    ["Blight Pyromancer"] = "枯萎火法师",
+    ["Detect Area Height"] = "检测区域高度",
+    ["Height of detect area cylinder: 20"] = "检测区域圆柱高度:20",
+    ["Detect Area Radius"] = "检测区域半径",
+    ["Radius of detect area cylinder: 10"] = "检测区域圆柱半径:10",
+    ["Show Farm Area"] = "显示挖矿区域",
+    ["Show center point and area name for each selected farm area"] = "显示每个选定挖矿区域的中心点和区域名称",
+    ["Rock Priorities"] = "石头优先级",
+    ["Basalt"] = "玄武岩",
+    ["Basalt Core"] = "玄武岩核心",
+    ["Basalt Rock"] = "玄武岩石",
+    ["MinerZombie"] = "矿工僵尸",
+    ["Reaper"] = "收割者",
+    ["Skeleton Rogue"] = "骷髅盗贼",
+    ["Slime"] = "史莱姆",
+    ["Zombie"] = "僵尸",
+    ["ESP Settings"] = "ESP设置",
+    ["ESP Ore"] = "ESP矿石",
+    ["Show ESP for all ores (all folders)"] = "显示所有矿石的ESP(所有文件夹)",
+    ["ESP Ore Rock Selection"] = "ESP矿石石头选择",
+    ["Select rocks to show ESP (empty = show all rocks)"] = "选择要显示ESP的石头(空=显示所有石头)",
+    ["Player ESP"] = "玩家ESP",
+    ["ESP Player"] = "ESP玩家",
+    ["Show ESP for other players (Skeleton + Name)"] = "显示其他玩家的ESP(骨骼+名字)",
+    ["Mob ESP"] = "怪物ESP",
+    ["ESP Mob"] = "ESP怪物",
+    ["Show ESP for selected mobs"] = "显示选定怪物的ESP",
+    ["ESP Mob Selection"] = "ESP怪物选择",
+    ["Select mobs to show ESP (empty = show no mobs)"] = "选择要显示ESP的怪物(空=不显示任何怪物)",
+    ["Auto Sell Configuration"] = "自动出售配置",
+    ["AutoSell"] = "自动出售",
+    ["Enable AutoSell"] = "启用自动出售",
+    ["Automatically sell selected ores, runes, and essences"] = "自动出售选定的矿石、符文和精华",
+    ["Ores"] = "矿石",
+    ["Ores to Sell"] = "要出售的矿石",
+    ["Select ores to sell (sells all quantity)"] = "选择要出售的矿石(出售全部数量)",
+    ["Ores to Sell (Limit)"] = "要出售的矿石(限制)",
+    ["Select ores to sell only excess above limit"] = "选择仅出售超过限制的多余矿石",
+    ["Ore Limit"] = "矿石限制",
+    ["Enter limit number for selected ores (only excess will be sold). Default: 50"] = "输入选定矿石的限制数量(仅出售多余部分)。默认:50",
+    ["Essences"] = "精华",
+    ["Essences to Sell"] = "要出售的精华",
+    ["Select essences to sell"] = "选择要出售的精华",
+    ["Runes"] = "符文",
+    ["Runes [1 Trait] to Sell"] = "要出售的符文[1特性]",
+    ["Select rune types to sell (only 1 trait runes)"] = "选择要出售的符文类型(仅1特性符文)",
+    ["Runes [All Traits] to Sell"] = "要出售的符文[所有特性]",
+    ["Select rune types to sell (all traits, any tier)"] = "选择要出售的符文类型(所有特性,任何等级)",
+    ["Epic Essence"] = "史诗精华",
+    ["Greater Essence"] = "高等精华",
+    ["Large Essence"] = "大精华",
+    ["Medium Essence"] = "中精华",
+    ["Small Essence"] = "小精华",
+    ["Superior Essence"] = "卓越精华",
+    ["Tiny Essence"] = "微小精华",
+    ["LuckPotion1 (350)"] = "幸运药水1(350)",
+    ["MinerPotion1 (500)"] = "矿工药水1(500)",
+    ["Enable AutoPotion"] = "启用自动药水",
+    ["Automatically buy and use selected potions"] = "自动购买并使用选定的药水",
+    ["Potions to Use"] = "要使用的药水",
+    ["Select potions to automatically buy and use"] = "选择要自动购买并使用的药水",
+    ["Forge"] = "锻造",
+    ["Manually forge items"] = "手动锻造物品",
+    ["Auto Forge"] = "自动锻造",
+    ["Enable Auto Forge"] = "启用自动锻造",
+    ["Automatically skip Melt and Pour minigames"] = "自动跳过熔化和灌注小游戏",
+    ["Miscellaneous"] = "杂项",
+    ["Auto Reconnect"] = "自动重连",
+    ["Automatically reconnect when kicked or error occurs"] = "被踢出或发生错误时自动重新连接",
+    ["Anti AFK"] = "防挂机",
+    ["Prevent being kicked from game due to AFK"] = "防止因挂机被踢出游戏",
+    ["Anti Shake Camera"] = "防摄像机抖动",
+    ["Disable camera shake effects"] = "禁用摄像机抖动效果",
+    ["Teleport"] = "传送",
+    ["Teleport Target"] = "传送目标",
+    ["Select teleport target"] = "选择传送目标",
+    ["Teleport to selected target"] = "传送到选定目标",
+    ["Teleport to Island1"] = "传送到岛屿1",
+    ["Teleport to Stonewake's Cross island (World1)"] = "传送到石醒之十字岛(世界1)",
+    ["Teleport to Island2"] = "传送到岛屿2",
+    ["Teleport to Forgotten Kingdom island (World2)"] = "传送到遗忘王国岛(世界2)",
+    ["Auto Teleport"] = "自动传送",
+    ["Auto Teleport to Stonewake's Cross (World1)"] = "自动传送到石醒之十字(世界1)",
+    ["Automatically teleport to Stonewake's Cross (World1)"] = "自动传送到石醒之十字(世界1)",
+    ["Auto Teleport to Forgotten Kingdom (World2)"] = "自动传送到遗忘王国(世界2)",
+    ["Automatically teleport to Forgotten Kingdom (World2)"] = "自动传送到遗忘王国(世界2)",
+    ["General Settings"] = "通用设置",
+    ["Lava Detection Rock"] = "熔岩检测石头",
+    ["Prevent Lava Hit (Rock)"] = "防止熔岩击中(石头)",
+    ["Lava Detection Mob"] = "熔岩检测怪物",
+    ["Prevent Lava Hit (Mob)"] = "防止熔岩击中(怪物)",
+    ["Farming Settings"] = "挖矿设置",
+    ["Farm Speed"] = "挖矿速度",
+    ["Tween speed for farming:65 studs/sec"] = "挖矿补间速度:65单位/秒",
+    ["Prevent Moderator"] = "防管理员",
+    ["Anti Moderator"] = "反管理员",
+    ["Rejoin when moderators from specified group roles join"] = "指定群组角色的管理员加入时重新加入游戏",
+    ["Graphics Optimization"] = "图形优化",
+    ["LowGraphic"] = "低图形",
+    ["Optimize graphics for better performance (reduces lag)"] = "优化图形以获得更好的性能(减少延迟)"
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    if Translations[text] then return Translations[text] end
+    for en, cn in pairs(Translations) do
+        if text:find(en) then return text:gsub(en, cn) end
+    end
+    return text
+end
+
+local translatedElements = {}
+local originalTexts = {}
+
+local function safeTranslateElement(element)
+    if translatedElements[element] then return end
+    
+    pcall(function()
+        if element:IsA("TextLabel") or element:IsA("TextButton") or element:IsA("TextBox") then
+            local currentText = element.Text
+            if currentText and currentText ~= "" then
+                if not originalTexts[element] then
+                    originalTexts[element] = currentText
+                end
+                
+                local translatedText = translateText(currentText)
+                if translatedText ~= currentText then
+                    element.Text = translatedText
+                    translatedElements[element] = true
+                end
+            end
+        end
+    end)
+end
+
+local function setupSmartListener()
+    local function onTextPropertyChanged(element)
+        if translatedElements[element] then
+            local currentText = element.Text
+            local originalText = originalTexts[element]
+            
+            if currentText == originalText or translateText(currentText) == currentText then
+                translatedElements[element] = nil
+                return
+            end
+            
+            local translatedText = translateText(currentText)
+            if translatedText ~= currentText then
+                element.Text = translatedText
+            end
+        else
+            safeTranslateElement(element)
+        end
+    end
+
+    local function addSmartListener(parent)
+        parent.DescendantAdded:Connect(function(descendant)
+            task.wait(0.3)
+            safeTranslateElement(descendant)
+            
+            if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                descendant:GetPropertyChangedSignal("Text"):Connect(function()
+                    task.wait(0.1)
+                    onTextPropertyChanged(descendant)
+                end)
+            end
+        end)
+    end
+    
+    pcall(addSmartListener, game:GetService("CoreGui"))
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        pcall(addSmartListener, player.PlayerGui)
+    end
+end
+
+local function delayedInitialTranslate()
+    task.wait(5)
+    
+    for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+        safeTranslateElement(gui)
+    end
+    
+    local player = game:GetService("Players").LocalPlayer
+    if player and player:FindFirstChild("PlayerGui") then
+        for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+            safeTranslateElement(gui)
+        end
+    end
+end
+
+task.wait(2)
+setupSmartListener()
+delayedInitialTranslate()
+
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/280c3c5ae0ed18010fea0d86c424fdb5.lua"))()
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
