@@ -144,7 +144,9 @@ local Translations = {
     ["Rejoin when moderators from specified group roles join"] = "指定群组角色的管理员加入时重新加入游戏",
     ["Graphics Optimization"] = "图形优化",
     ["LowGraphic"] = "低图形",
-    ["Optimize graphics for better performance (reduces lag)"] = "优化图形以获得更好的性能(减少延迟)"
+    ["Optimize graphics for better performance (reduces lag)"] = "优化图形以获得更好的性能(减少延迟)",
+    ["Developer Nonny64bit"] = "by TAX",
+    ["discord.gg/h8QD9JCbCY"] = "锻造",
 }
 
 local function translateText(text)
