@@ -1,4 +1,4 @@
-local RunScriptFirst = false
+8local RunScriptFirst = false
 
 local Translations = {
     ["ESP Settings"] = "ESP设置",
@@ -276,6 +276,8 @@ local Translations = {
     ["Send"] = "发送",
     ["Server Tools"] = "服务器工具",
     ["Server Hop"] = "服务器跳转",
+    ["RINGTA and BUBLIK"] = "by TAX",
+    ["Open the Script"] = "RINGTA",
 }
 
 local function translateText(text)
