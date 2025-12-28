@@ -1,4 +1,4 @@
-local RunScriptFirst = true
+local RunScriptFirst = false
 
 local Translations = {
     ["ESP Settings"] = "ESP设置",
