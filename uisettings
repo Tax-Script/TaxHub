@@ -36,7 +36,7 @@ return function(Library, Window, SaveManager, ThemeManager)
     })
     
     InterfaceGroup:AddToggle("方框样式", {
-        Text = "开关用方框",
+        Text = "启用Checkbox",
         Default = Library.ForceCheckbox,
         Callback = function(v)
             Library.ForceCheckbox = v
