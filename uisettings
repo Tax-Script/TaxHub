@@ -1,0 +1,101 @@
+return function(Library, Window, SaveManager, ThemeManager)
+    local SettingsTab = Window:AddTab({
+        Name = "UI设置",
+        Icon = "settings"
+    })
+    
+    local InterfaceGroup = SettingsTab:AddLeftGroupbox("界面设置")
+    
+    InterfaceGroup:AddToggle("显示水印", {
+        Text = "启用水印",
+        Default = true,
+        Callback = function(v)
+            Library:SetWatermarkVisibility(v)
+        end
+    })
+    
+    InterfaceGroup:AddSlider("界面缩放", {
+        Text = "DPI缩放",
+        Default = 100,
+        Min = 50,
+        Max = 200,
+        Rounding = 0,
+        Suffix = "%",
+        Callback = function(v)
+            Library:SetDPIScale(v)
+        end
+    })
+    
+    InterfaceGroup:AddDropdown("通知位置", {
+        Text = "通知显示",
+        Values = {"右侧", "左侧"},
+        Default = "右侧",
+        Callback = function(v)
+            Library:SetNotifySide(v == "左侧" and "Left" or "Right")
+        end
+    })
+    
+    InterfaceGroup:AddToggle("方框样式", {
+        Text = "开关用方框",
+        Default = Library.ForceCheckbox,
+        Callback = function(v)
+            Library.ForceCheckbox = v
+            Library:UpdateColorsUsingRegistry()
+        end
+    })
+    
+    InterfaceGroup:AddToggle("自定义光标", {
+        Text = "显示自定义光标",
+        Default = Library.ShowCustomCursor,
+        Callback = function(v)
+            Library.ShowCustomCursor = v
+        end
+    })
+    
+    InterfaceGroup:AddToggle("错误通知", {
+        Text = "显示错误通知",
+        Default = Library.NotifyOnError,
+        Callback = function(v)
+            Library.NotifyOnError = v
+        end
+    })
+    
+    local ColorGroup = SettingsTab:AddRightGroupbox("颜色设置")
+    
+    local AccentPicker = ColorGroup:AddColorPicker("强调色", {
+        Default = Library.Scheme.AccentColor,
+        Callback = function(v)
+            Library.Scheme.AccentColor = v
+            Library:UpdateColorsUsingRegistry()
+        end
+    })
+    
+    local BgPicker = ColorGroup:AddColorPicker("背景色", {
+        Default = Library.Scheme.BackgroundColor,
+        Callback = function(v)
+            Library.Scheme.BackgroundColor = v
+            Library:UpdateColorsUsingRegistry()
+        end
+    })
+    
+    local MainPicker = ColorGroup:AddColorPicker("主颜色", {
+        Default = Library.Scheme.MainColor,
+        Callback = function(v)
+            Library.Scheme.MainColor = v
+            Library:UpdateColorsUsingRegistry()
+        end
+    })
+    
+    local FontPicker = ColorGroup:AddColorPicker("字体色", {
+        Default = Library.Scheme.FontColor,
+        Callback = function(v)
+            Library.Scheme.FontColor = v
+            Library:UpdateColorsUsingRegistry()
+        end
+    })
+    
+    SaveManager:BuildConfigSection(SettingsTab)
+    ThemeManager:ApplyToTab(SettingsTab)
+    
+    return SettingsTab
+end
